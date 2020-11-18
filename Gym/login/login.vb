@@ -39,7 +39,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If True Then    'todo 待改
+        If True Then    'todo 待改 根据用户户名
             Dim stu = New student_UI
             stu.Show()
         End If
