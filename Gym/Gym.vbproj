@@ -64,8 +64,8 @@
     <None Include="My Project\app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="field\booking.resx">
-      <DependentUpon>booking.vb</DependentUpon>
+    <EmbeddedResource Include="field\student-UI.resx">
+      <DependentUpon>student-UI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -80,10 +80,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="field\booking.Designer.vb">
-      <DependentUpon>booking.vb</DependentUpon>
+    <Compile Include="field\student-UI.Designer.vb">
+      <DependentUpon>student-UI.vb</DependentUpon>
     </Compile>
-    <Compile Include="field\booking.vb">
+    <Compile Include="field\student-UI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login\Login.Designer.vb">
