@@ -23,14 +23,28 @@ Partial Class startup
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(startup))
+        Dim ListViewGroup1 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup2 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup3 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.loginlink = New System.Windows.Forms.LinkLabel()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer4 = New System.Windows.Forms.SplitContainer()
-        Me.NewsList = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.NewsList = New System.Windows.Forms.ListBox()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -57,7 +71,7 @@ Partial Class startup
         '
         'SplitContainer1.Panel1
         '
-        Me.SplitContainer1.Panel1.BackColor = System.Drawing.Color.SteelBlue
+        Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox1)
         Me.SplitContainer1.Panel1.Controls.Add(Me.loginlink)
         '
@@ -71,10 +85,11 @@ Partial Class startup
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 7)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(278, 51)
+        Me.PictureBox1.Size = New System.Drawing.Size(280, 61)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -82,7 +97,7 @@ Partial Class startup
         '
         Me.loginlink.AutoSize = True
         Me.loginlink.Font = New System.Drawing.Font("思源黑体 Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.loginlink.LinkColor = System.Drawing.Color.White
+        Me.loginlink.LinkColor = System.Drawing.SystemColors.HotTrack
         Me.loginlink.Location = New System.Drawing.Point(668, 19)
         Me.loginlink.Name = "loginlink"
         Me.loginlink.Size = New System.Drawing.Size(57, 30)
@@ -130,10 +145,65 @@ Partial Class startup
         '
         'SplitContainer4.Panel2
         '
+        Me.SplitContainer4.Panel2.Controls.Add(Me.ListView1)
         Me.SplitContainer4.Panel2.Controls.Add(Me.NewsList)
         Me.SplitContainer4.Size = New System.Drawing.Size(608, 375)
         Me.SplitContainer4.SplitterDistance = 33
         Me.SplitContainer4.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Location = New System.Drawing.Point(240, 5)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(74, 22)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "场地通知"
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
+        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        ListViewGroup1.Header = "ListViewGroup"
+        ListViewGroup1.Name = "ListViewGroup1"
+        ListViewGroup2.Header = "ListViewGroup"
+        ListViewGroup2.Name = "ListViewGroup2"
+        ListViewGroup3.Header = "ListViewGroup"
+        ListViewGroup3.Name = "ListViewGroup3"
+        Me.ListView1.Groups.AddRange(New System.Windows.Forms.ListViewGroup() {ListViewGroup1, ListViewGroup2, ListViewGroup3})
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
+        Me.ListView1.Location = New System.Drawing.Point(0, 0)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(608, 338)
+        Me.ListView1.TabIndex = 1
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "ddd"
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "ddd"
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "ddd"
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "ddd"
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "ddd"
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "ddd"
         '
         'NewsList
         '
@@ -148,16 +218,6 @@ Partial Class startup
         Me.NewsList.Name = "NewsList"
         Me.NewsList.Size = New System.Drawing.Size(608, 338)
         Me.NewsList.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(240, 5)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 22)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "场地通知"
         '
         'startup
         '
@@ -197,4 +257,11 @@ Partial Class startup
     Friend WithEvents SplitContainer3 As Windows.Forms.SplitContainer
     Friend WithEvents SplitContainer4 As Windows.Forms.SplitContainer
     Friend WithEvents Label1 As Windows.Forms.Label
+    Friend WithEvents ListView1 As Windows.Forms.ListView
+    Friend WithEvents ColumnHeader1 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader2 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader3 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader4 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader5 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader6 As Windows.Forms.ColumnHeader
 End Class
