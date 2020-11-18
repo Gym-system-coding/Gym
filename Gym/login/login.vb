@@ -31,4 +31,10 @@
     Private Sub IdentityBox_GotFocus(sender As Object, e As EventArgs) Handles IdentityBox.GotFocus
         IdentityBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
     End Sub
+
+    Private Sub IdentityBox_LostFocus(sender As Object, e As EventArgs) Handles IdentityBox.LostFocus
+        If IdentityBox.Text = "身份" Then
+            IdentityBox.ForeColor = System.Drawing.SystemColors.ActiveBorder
+        End If
+    End Sub
 End Class
