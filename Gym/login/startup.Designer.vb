@@ -95,6 +95,7 @@ Partial Class startup
         '
         'loginlink
         '
+        Me.loginlink.ActiveLinkColor = System.Drawing.Color.White
         Me.loginlink.AutoSize = True
         Me.loginlink.Font = New System.Drawing.Font("思源黑体 Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.loginlink.LinkColor = System.Drawing.SystemColors.HotTrack
@@ -104,6 +105,7 @@ Partial Class startup
         Me.loginlink.TabIndex = 0
         Me.loginlink.TabStop = True
         Me.loginlink.Text = "登录"
+        Me.loginlink.VisitedLinkColor = System.Drawing.SystemColors.HotTrack
         '
         'SplitContainer2
         '
