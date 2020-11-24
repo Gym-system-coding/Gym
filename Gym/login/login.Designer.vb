@@ -135,9 +135,10 @@ Partial Class login
         Me.Controls.Add(Me.UsernameBox)
         Me.Controls.Add(Me.SplitContainer1)
         Me.ForeColor = System.Drawing.Color.Black
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Location = New System.Drawing.Point(200, 500)
         Me.Name = "login"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "登录"
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.PerformLayout()
