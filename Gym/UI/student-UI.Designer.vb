@@ -22,6 +22,13 @@ Partial Class student_UI
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim ListViewGroup1 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup2 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup3 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(student_UI))
         Me.Root = New System.Windows.Forms.SplitContainer()
         Me.HomepageLink = New System.Windows.Forms.LinkLabel()
@@ -35,44 +42,71 @@ Partial Class student_UI
         Me.FieldInfo = New System.Windows.Forms.Label()
         Me.StudentUIText = New System.Windows.Forms.Label()
         Me.FieldPanel = New System.Windows.Forms.Panel()
+        Me.FieldContainer = New System.Windows.Forms.SplitContainer()
+        Me.MyField = New System.Windows.Forms.Button()
+        Me.SearchField = New System.Windows.Forms.Button()
+        Me.SearchFieldPanel = New System.Windows.Forms.Panel()
+        Me.Waiting = New System.Windows.Forms.Button()
+        Me.Sharing = New System.Windows.Forms.Button()
+        Me.Booking = New System.Windows.Forms.Button()
+        Me.InputText1 = New System.Windows.Forms.Label()
+        Me.FieldInput = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.OptionText2 = New System.Windows.Forms.Label()
         Me.OptionText1 = New System.Windows.Forms.Label()
         Me.SelectField = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.MyFieldPanel = New System.Windows.Forms.Panel()
+        Me.ToShare = New System.Windows.Forms.Button()
+        Me.Paying = New System.Windows.Forms.Button()
+        Me.Unsubscribe = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.MessagePanel = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.FeedbackPanel = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.TrainingPanel = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GamePanel = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.FieldContainer = New System.Windows.Forms.SplitContainer()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Field_MyinfoPanel = New System.Windows.Forms.Panel()
-        Me.Field_SearchPanel = New System.Windows.Forms.Panel()
-        Me.FieldNOInput = New System.Windows.Forms.TextBox()
-        Me.InputText1 = New System.Windows.Forms.Label()
-        Me.Booking = New System.Windows.Forms.Button()
-        Me.Sharing = New System.Windows.Forms.Button()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.GameLabel2 = New System.Windows.Forms.Label()
+        Me.GameLabel3 = New System.Windows.Forms.Label()
+        Me.JoinGame = New System.Windows.Forms.Button()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.FeedbackContainer = New System.Windows.Forms.SplitContainer()
+        Me.Problem = New System.Windows.Forms.Button()
+        Me.Maintenace = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Root.Panel1.SuspendLayout()
         Me.Root.Panel2.SuspendLayout()
         Me.Root.SuspendLayout()
         Me.FieldPanel.SuspendLayout()
-        Me.MessagePanel.SuspendLayout()
-        Me.FeedbackPanel.SuspendLayout()
-        Me.TrainingPanel.SuspendLayout()
-        Me.GamePanel.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FieldContainer.Panel1.SuspendLayout()
         Me.FieldContainer.Panel2.SuspendLayout()
         Me.FieldContainer.SuspendLayout()
-        Me.Field_SearchPanel.SuspendLayout()
+        Me.SearchFieldPanel.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MyFieldPanel.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MessagePanel.SuspendLayout()
+        Me.FeedbackPanel.SuspendLayout()
+        Me.TrainingPanel.SuspendLayout()
+        Me.GamePanel.SuspendLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FeedbackContainer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FeedbackContainer.Panel1.SuspendLayout()
+        Me.FeedbackContainer.Panel2.SuspendLayout()
+        Me.FeedbackContainer.SuspendLayout()
         Me.SuspendLayout()
         '
         'Root
@@ -101,11 +135,11 @@ Partial Class student_UI
         '
         'Root.Panel2
         '
-        Me.Root.Panel2.Controls.Add(Me.MessagePanel)
-        Me.Root.Panel2.Controls.Add(Me.FeedbackPanel)
         Me.Root.Panel2.Controls.Add(Me.TrainingPanel)
         Me.Root.Panel2.Controls.Add(Me.GamePanel)
         Me.Root.Panel2.Controls.Add(Me.FieldPanel)
+        Me.Root.Panel2.Controls.Add(Me.MessagePanel)
+        Me.Root.Panel2.Controls.Add(Me.FeedbackPanel)
         Me.Root.Size = New System.Drawing.Size(865, 500)
         Me.Root.SplitterDistance = 52
         Me.Root.TabIndex = 0
@@ -242,6 +276,127 @@ Partial Class student_UI
         Me.FieldPanel.TabIndex = 0
         Me.FieldPanel.Visible = False
         '
+        'FieldContainer
+        '
+        Me.FieldContainer.Location = New System.Drawing.Point(0, 0)
+        Me.FieldContainer.Name = "FieldContainer"
+        '
+        'FieldContainer.Panel1
+        '
+        Me.FieldContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.FieldContainer.Panel1.Controls.Add(Me.MyField)
+        Me.FieldContainer.Panel1.Controls.Add(Me.SearchField)
+        Me.FieldContainer.Panel1MinSize = 100
+        '
+        'FieldContainer.Panel2
+        '
+        Me.FieldContainer.Panel2.Controls.Add(Me.MyFieldPanel)
+        Me.FieldContainer.Panel2.Controls.Add(Me.SearchFieldPanel)
+        Me.FieldContainer.Size = New System.Drawing.Size(865, 444)
+        Me.FieldContainer.SplitterDistance = 109
+        Me.FieldContainer.SplitterWidth = 1
+        Me.FieldContainer.TabIndex = 7
+        '
+        'MyField
+        '
+        Me.MyField.BackColor = System.Drawing.Color.AliceBlue
+        Me.MyField.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MyField.Location = New System.Drawing.Point(0, 22)
+        Me.MyField.Name = "MyField"
+        Me.MyField.Size = New System.Drawing.Size(108, 23)
+        Me.MyField.TabIndex = 8
+        Me.MyField.Text = "我的场地"
+        Me.MyField.UseVisualStyleBackColor = False
+        '
+        'SearchField
+        '
+        Me.SearchField.BackColor = System.Drawing.Color.AliceBlue
+        Me.SearchField.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SearchField.Location = New System.Drawing.Point(0, 0)
+        Me.SearchField.Name = "SearchField"
+        Me.SearchField.Size = New System.Drawing.Size(108, 23)
+        Me.SearchField.TabIndex = 7
+        Me.SearchField.Text = "查询场地"
+        Me.SearchField.UseVisualStyleBackColor = False
+        '
+        'SearchFieldPanel
+        '
+        Me.SearchFieldPanel.BackColor = System.Drawing.Color.White
+        Me.SearchFieldPanel.Controls.Add(Me.Waiting)
+        Me.SearchFieldPanel.Controls.Add(Me.Sharing)
+        Me.SearchFieldPanel.Controls.Add(Me.Booking)
+        Me.SearchFieldPanel.Controls.Add(Me.InputText1)
+        Me.SearchFieldPanel.Controls.Add(Me.FieldInput)
+        Me.SearchFieldPanel.Controls.Add(Me.DataGridView1)
+        Me.SearchFieldPanel.Controls.Add(Me.OptionText2)
+        Me.SearchFieldPanel.Controls.Add(Me.OptionText1)
+        Me.SearchFieldPanel.Controls.Add(Me.SelectField)
+        Me.SearchFieldPanel.Controls.Add(Me.ComboBox1)
+        Me.SearchFieldPanel.Controls.Add(Me.DateTimePicker1)
+        Me.SearchFieldPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SearchFieldPanel.Location = New System.Drawing.Point(0, 0)
+        Me.SearchFieldPanel.Name = "SearchFieldPanel"
+        Me.SearchFieldPanel.Size = New System.Drawing.Size(755, 444)
+        Me.SearchFieldPanel.TabIndex = 8
+        '
+        'Waiting
+        '
+        Me.Waiting.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Waiting.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Waiting.Location = New System.Drawing.Point(610, 93)
+        Me.Waiting.Name = "Waiting"
+        Me.Waiting.Size = New System.Drawing.Size(75, 23)
+        Me.Waiting.TabIndex = 11
+        Me.Waiting.Text = "等待"
+        Me.Waiting.UseVisualStyleBackColor = False
+        '
+        'Sharing
+        '
+        Me.Sharing.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Sharing.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Sharing.Location = New System.Drawing.Point(530, 93)
+        Me.Sharing.Name = "Sharing"
+        Me.Sharing.Size = New System.Drawing.Size(75, 23)
+        Me.Sharing.TabIndex = 10
+        Me.Sharing.Text = "拼场"
+        Me.Sharing.UseVisualStyleBackColor = False
+        '
+        'Booking
+        '
+        Me.Booking.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Booking.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Booking.Location = New System.Drawing.Point(450, 93)
+        Me.Booking.Name = "Booking"
+        Me.Booking.Size = New System.Drawing.Size(75, 23)
+        Me.Booking.TabIndex = 9
+        Me.Booking.Text = "预约"
+        Me.Booking.UseVisualStyleBackColor = False
+        '
+        'InputText1
+        '
+        Me.InputText1.AutoSize = True
+        Me.InputText1.Location = New System.Drawing.Point(232, 98)
+        Me.InputText1.Name = "InputText1"
+        Me.InputText1.Size = New System.Drawing.Size(65, 12)
+        Me.InputText1.TabIndex = 8
+        Me.InputText1.Text = "场馆编号："
+        '
+        'FieldInput
+        '
+        Me.FieldInput.Location = New System.Drawing.Point(303, 95)
+        Me.FieldInput.Name = "FieldInput"
+        Me.FieldInput.Size = New System.Drawing.Size(100, 21)
+        Me.FieldInput.TabIndex = 7
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(234, 147)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 23
+        Me.DataGridView1.Size = New System.Drawing.Size(454, 256)
+        Me.DataGridView1.TabIndex = 6
+        '
         'OptionText2
         '
         Me.OptionText2.AutoSize = True
@@ -287,9 +442,63 @@ Partial Class student_UI
         Me.DateTimePicker1.Size = New System.Drawing.Size(118, 21)
         Me.DateTimePicker1.TabIndex = 1
         '
+        'MyFieldPanel
+        '
+        Me.MyFieldPanel.Controls.Add(Me.ToShare)
+        Me.MyFieldPanel.Controls.Add(Me.Paying)
+        Me.MyFieldPanel.Controls.Add(Me.Unsubscribe)
+        Me.MyFieldPanel.Controls.Add(Me.DataGridView2)
+        Me.MyFieldPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MyFieldPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MyFieldPanel.Name = "MyFieldPanel"
+        Me.MyFieldPanel.Size = New System.Drawing.Size(755, 444)
+        Me.MyFieldPanel.TabIndex = 7
+        '
+        'ToShare
+        '
+        Me.ToShare.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.ToShare.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ToShare.Location = New System.Drawing.Point(508, 87)
+        Me.ToShare.Name = "ToShare"
+        Me.ToShare.Size = New System.Drawing.Size(75, 23)
+        Me.ToShare.TabIndex = 12
+        Me.ToShare.Text = "发起拼场"
+        Me.ToShare.UseVisualStyleBackColor = False
+        '
+        'Paying
+        '
+        Me.Paying.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Paying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Paying.Location = New System.Drawing.Point(400, 87)
+        Me.Paying.Name = "Paying"
+        Me.Paying.Size = New System.Drawing.Size(75, 23)
+        Me.Paying.TabIndex = 11
+        Me.Paying.Text = "缴费"
+        Me.Paying.UseVisualStyleBackColor = False
+        '
+        'Unsubscribe
+        '
+        Me.Unsubscribe.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Unsubscribe.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Unsubscribe.Location = New System.Drawing.Point(281, 87)
+        Me.Unsubscribe.Name = "Unsubscribe"
+        Me.Unsubscribe.Size = New System.Drawing.Size(75, 23)
+        Me.Unsubscribe.TabIndex = 10
+        Me.Unsubscribe.Text = "退订"
+        Me.Unsubscribe.UseVisualStyleBackColor = False
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(97, 173)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowTemplate.Height = 23
+        Me.DataGridView2.Size = New System.Drawing.Size(543, 29)
+        Me.DataGridView2.TabIndex = 0
+        '
         'MessagePanel
         '
-        Me.MessagePanel.Controls.Add(Me.Label5)
+        Me.MessagePanel.Controls.Add(Me.ListView1)
         Me.MessagePanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MessagePanel.Location = New System.Drawing.Point(0, 0)
         Me.MessagePanel.Name = "MessagePanel"
@@ -297,33 +506,15 @@ Partial Class student_UI
         Me.MessagePanel.TabIndex = 4
         Me.MessagePanel.Visible = False
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(99, 33)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(77, 12)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "MessagePanel"
-        '
         'FeedbackPanel
         '
-        Me.FeedbackPanel.Controls.Add(Me.Label4)
+        Me.FeedbackPanel.Controls.Add(Me.FeedbackContainer)
         Me.FeedbackPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FeedbackPanel.Location = New System.Drawing.Point(0, 0)
         Me.FeedbackPanel.Name = "FeedbackPanel"
         Me.FeedbackPanel.Size = New System.Drawing.Size(865, 444)
         Me.FeedbackPanel.TabIndex = 3
         Me.FeedbackPanel.Visible = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(25, 21)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 12)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "FeedbackPanel"
         '
         'TrainingPanel
         '
@@ -346,7 +537,11 @@ Partial Class student_UI
         '
         'GamePanel
         '
-        Me.GamePanel.Controls.Add(Me.Label1)
+        Me.GamePanel.Controls.Add(Me.JoinGame)
+        Me.GamePanel.Controls.Add(Me.GameLabel3)
+        Me.GamePanel.Controls.Add(Me.GameLabel2)
+        Me.GamePanel.Controls.Add(Me.DataGridView4)
+        Me.GamePanel.Controls.Add(Me.DataGridView3)
         Me.GamePanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GamePanel.Location = New System.Drawing.Point(0, 0)
         Me.GamePanel.Name = "GamePanel"
@@ -354,132 +549,150 @@ Partial Class student_UI
         Me.GamePanel.TabIndex = 1
         Me.GamePanel.Visible = False
         '
-        'Label1
+        'DataGridView3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(34, 42)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 12)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "GamePanel"
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(157, 65)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.RowTemplate.Height = 23
+        Me.DataGridView3.Size = New System.Drawing.Size(516, 150)
+        Me.DataGridView3.TabIndex = 1
         '
-        'DataGridView1
+        'DataGridView4
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(234, 147)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 23
-        Me.DataGridView1.Size = New System.Drawing.Size(454, 256)
-        Me.DataGridView1.TabIndex = 6
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Location = New System.Drawing.Point(157, 262)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.RowTemplate.Height = 23
+        Me.DataGridView4.Size = New System.Drawing.Size(615, 150)
+        Me.DataGridView4.TabIndex = 3
         '
-        'FieldContainer
+        'GameLabel2
         '
-        Me.FieldContainer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FieldContainer.Location = New System.Drawing.Point(0, 0)
-        Me.FieldContainer.Name = "FieldContainer"
+        Me.GameLabel2.AutoSize = True
+        Me.GameLabel2.Location = New System.Drawing.Point(36, 65)
+        Me.GameLabel2.Name = "GameLabel2"
+        Me.GameLabel2.Size = New System.Drawing.Size(53, 12)
+        Me.GameLabel2.TabIndex = 4
+        Me.GameLabel2.Text = "比赛信息"
         '
-        'FieldContainer.Panel1
+        'GameLabel3
         '
-        Me.FieldContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.FieldContainer.Panel1.Controls.Add(Me.Button2)
-        Me.FieldContainer.Panel1.Controls.Add(Me.Button1)
-        Me.FieldContainer.Panel1MinSize = 100
+        Me.GameLabel3.AutoSize = True
+        Me.GameLabel3.Location = New System.Drawing.Point(53, 262)
+        Me.GameLabel3.Name = "GameLabel3"
+        Me.GameLabel3.Size = New System.Drawing.Size(53, 12)
+        Me.GameLabel3.TabIndex = 5
+        Me.GameLabel3.Text = "我的比赛"
         '
-        'FieldContainer.Panel2
+        'JoinGame
         '
-        Me.FieldContainer.Panel2.Controls.Add(Me.Field_SearchPanel)
-        Me.FieldContainer.Panel2.Controls.Add(Me.Field_MyinfoPanel)
-        Me.FieldContainer.Size = New System.Drawing.Size(865, 444)
-        Me.FieldContainer.SplitterDistance = 109
-        Me.FieldContainer.SplitterWidth = 1
-        Me.FieldContainer.TabIndex = 7
+        Me.JoinGame.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.JoinGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.JoinGame.Location = New System.Drawing.Point(728, 118)
+        Me.JoinGame.Name = "JoinGame"
+        Me.JoinGame.Size = New System.Drawing.Size(75, 23)
+        Me.JoinGame.TabIndex = 12
+        Me.JoinGame.Text = "报名比赛"
+        Me.JoinGame.UseVisualStyleBackColor = False
         '
-        'Button1
+        'ListView1
         '
-        Me.Button1.BackColor = System.Drawing.Color.AliceBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(0, -5)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(108, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
+        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        ListViewGroup1.Header = "ListViewGroup"
+        ListViewGroup1.Name = "ListViewGroup1"
+        ListViewGroup2.Header = "ListViewGroup"
+        ListViewGroup2.Name = "ListViewGroup2"
+        ListViewGroup3.Header = "ListViewGroup"
+        ListViewGroup3.Name = "ListViewGroup3"
+        Me.ListView1.Groups.AddRange(New System.Windows.Forms.ListViewGroup() {ListViewGroup1, ListViewGroup2, ListViewGroup3})
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
+        Me.ListView1.Location = New System.Drawing.Point(0, 0)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(865, 444)
+        Me.ListView1.TabIndex = 3
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
         '
-        'Button2
+        'ColumnHeader1
         '
-        Me.Button2.BackColor = System.Drawing.Color.AliceBlue
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(0, 17)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(108, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.ColumnHeader1.Text = "ddd"
         '
-        'Field_MyinfoPanel
+        'ColumnHeader2
         '
-        Me.Field_MyinfoPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Field_MyinfoPanel.Location = New System.Drawing.Point(0, 0)
-        Me.Field_MyinfoPanel.Name = "Field_MyinfoPanel"
-        Me.Field_MyinfoPanel.Size = New System.Drawing.Size(755, 444)
-        Me.Field_MyinfoPanel.TabIndex = 7
+        Me.ColumnHeader2.Text = "ddd"
         '
-        'Field_SearchPanel
+        'ColumnHeader3
         '
-        Me.Field_SearchPanel.BackColor = System.Drawing.Color.White
-        Me.Field_SearchPanel.Controls.Add(Me.Sharing)
-        Me.Field_SearchPanel.Controls.Add(Me.Booking)
-        Me.Field_SearchPanel.Controls.Add(Me.InputText1)
-        Me.Field_SearchPanel.Controls.Add(Me.FieldNOInput)
-        Me.Field_SearchPanel.Controls.Add(Me.DataGridView1)
-        Me.Field_SearchPanel.Controls.Add(Me.OptionText2)
-        Me.Field_SearchPanel.Controls.Add(Me.OptionText1)
-        Me.Field_SearchPanel.Controls.Add(Me.SelectField)
-        Me.Field_SearchPanel.Controls.Add(Me.ComboBox1)
-        Me.Field_SearchPanel.Controls.Add(Me.DateTimePicker1)
-        Me.Field_SearchPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Field_SearchPanel.Location = New System.Drawing.Point(0, 0)
-        Me.Field_SearchPanel.Name = "Field_SearchPanel"
-        Me.Field_SearchPanel.Size = New System.Drawing.Size(755, 444)
-        Me.Field_SearchPanel.TabIndex = 8
+        Me.ColumnHeader3.Text = "ddd"
         '
-        'FieldNOInput
+        'ColumnHeader4
         '
-        Me.FieldNOInput.Location = New System.Drawing.Point(234, 79)
-        Me.FieldNOInput.Name = "FieldNOInput"
-        Me.FieldNOInput.Size = New System.Drawing.Size(100, 21)
-        Me.FieldNOInput.TabIndex = 7
+        Me.ColumnHeader4.Text = "ddd"
         '
-        'InputText1
+        'ColumnHeader5
         '
-        Me.InputText1.AutoSize = True
-        Me.InputText1.Location = New System.Drawing.Point(151, 82)
-        Me.InputText1.Name = "InputText1"
-        Me.InputText1.Size = New System.Drawing.Size(65, 12)
-        Me.InputText1.TabIndex = 8
-        Me.InputText1.Text = "场馆编号："
+        Me.ColumnHeader5.Text = "ddd"
         '
-        'Booking
+        'ColumnHeader6
         '
-        Me.Booking.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Booking.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Booking.Location = New System.Drawing.Point(439, 77)
-        Me.Booking.Name = "Booking"
-        Me.Booking.Size = New System.Drawing.Size(75, 23)
-        Me.Booking.TabIndex = 9
-        Me.Booking.Text = "预约"
-        Me.Booking.UseVisualStyleBackColor = False
+        Me.ColumnHeader6.Text = "ddd"
         '
-        'Sharing
+        'FeedbackContainer
         '
-        Me.Sharing.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Sharing.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Sharing.Location = New System.Drawing.Point(588, 71)
-        Me.Sharing.Name = "Sharing"
-        Me.Sharing.Size = New System.Drawing.Size(75, 23)
-        Me.Sharing.TabIndex = 10
-        Me.Sharing.Text = "拼场"
-        Me.Sharing.UseVisualStyleBackColor = False
+        Me.FeedbackContainer.Location = New System.Drawing.Point(132, 149)
+        Me.FeedbackContainer.Name = "FeedbackContainer"
+        '
+        'FeedbackContainer.Panel1
+        '
+        Me.FeedbackContainer.Panel1.Controls.Add(Me.Maintenace)
+        Me.FeedbackContainer.Panel1.Controls.Add(Me.Problem)
+        '
+        'FeedbackContainer.Panel2
+        '
+        Me.FeedbackContainer.Panel2.Controls.Add(Me.Panel2)
+        Me.FeedbackContainer.Panel2.Controls.Add(Me.Panel1)
+        Me.FeedbackContainer.Size = New System.Drawing.Size(150, 100)
+        Me.FeedbackContainer.SplitterDistance = 25
+        Me.FeedbackContainer.TabIndex = 1
+        '
+        'Problem
+        '
+        Me.Problem.BackColor = System.Drawing.Color.AliceBlue
+        Me.Problem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Problem.Location = New System.Drawing.Point(-2, 0)
+        Me.Problem.Name = "Problem"
+        Me.Problem.Size = New System.Drawing.Size(108, 23)
+        Me.Problem.TabIndex = 9
+        Me.Problem.Text = "问题反馈"
+        Me.Problem.UseVisualStyleBackColor = False
+        '
+        'Maintenace
+        '
+        Me.Maintenace.BackColor = System.Drawing.Color.AliceBlue
+        Me.Maintenace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Maintenace.Location = New System.Drawing.Point(-2, 22)
+        Me.Maintenace.Name = "Maintenace"
+        Me.Maintenace.Size = New System.Drawing.Size(108, 23)
+        Me.Maintenace.TabIndex = 10
+        Me.Maintenace.Text = "我的场地"
+        Me.Maintenace.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(69, 70)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(200, 100)
+        Me.Panel1.TabIndex = 0
+        '
+        'Panel2
+        '
+        Me.Panel2.Location = New System.Drawing.Point(367, 65)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(200, 100)
+        Me.Panel2.TabIndex = 1
         '
         'student_UI
         '
@@ -491,6 +704,7 @@ Partial Class student_UI
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(750, 500)
         Me.Name = "student_UI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "student_UI"
         Me.Root.Panel1.ResumeLayout(False)
         Me.Root.Panel1.PerformLayout()
@@ -498,21 +712,27 @@ Partial Class student_UI
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Root.ResumeLayout(False)
         Me.FieldPanel.ResumeLayout(False)
-        Me.MessagePanel.ResumeLayout(False)
-        Me.MessagePanel.PerformLayout()
-        Me.FeedbackPanel.ResumeLayout(False)
-        Me.FeedbackPanel.PerformLayout()
-        Me.TrainingPanel.ResumeLayout(False)
-        Me.TrainingPanel.PerformLayout()
-        Me.GamePanel.ResumeLayout(False)
-        Me.GamePanel.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FieldContainer.Panel1.ResumeLayout(False)
         Me.FieldContainer.Panel2.ResumeLayout(False)
         CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FieldContainer.ResumeLayout(False)
-        Me.Field_SearchPanel.ResumeLayout(False)
-        Me.Field_SearchPanel.PerformLayout()
+        Me.SearchFieldPanel.ResumeLayout(False)
+        Me.SearchFieldPanel.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MyFieldPanel.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MessagePanel.ResumeLayout(False)
+        Me.FeedbackPanel.ResumeLayout(False)
+        Me.TrainingPanel.ResumeLayout(False)
+        Me.TrainingPanel.PerformLayout()
+        Me.GamePanel.ResumeLayout(False)
+        Me.GamePanel.PerformLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FeedbackContainer.Panel1.ResumeLayout(False)
+        Me.FeedbackContainer.Panel2.ResumeLayout(False)
+        CType(Me.FeedbackContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FeedbackContainer.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -533,10 +753,7 @@ Partial Class student_UI
     Friend WithEvents TrainingPanel As Windows.Forms.Panel
     Friend WithEvents GamePanel As Windows.Forms.Panel
     Friend WithEvents FieldPanel As Windows.Forms.Panel
-    Friend WithEvents Label1 As Windows.Forms.Label
     Friend WithEvents Label3 As Windows.Forms.Label
-    Friend WithEvents Label4 As Windows.Forms.Label
-    Friend WithEvents Label5 As Windows.Forms.Label
     Friend WithEvents ComboBox1 As Windows.Forms.ComboBox
     Friend WithEvents DateTimePicker1 As Windows.Forms.DateTimePicker
     Friend WithEvents OptionText2 As Windows.Forms.Label
@@ -544,12 +761,34 @@ Partial Class student_UI
     Friend WithEvents SelectField As Windows.Forms.ComboBox
     Friend WithEvents DataGridView1 As Windows.Forms.DataGridView
     Friend WithEvents FieldContainer As Windows.Forms.SplitContainer
-    Friend WithEvents Button1 As Windows.Forms.Button
-    Friend WithEvents Button2 As Windows.Forms.Button
-    Friend WithEvents Field_SearchPanel As Windows.Forms.Panel
+    Friend WithEvents SearchField As Windows.Forms.Button
+    Friend WithEvents MyField As Windows.Forms.Button
+    Friend WithEvents SearchFieldPanel As Windows.Forms.Panel
     Friend WithEvents Sharing As Windows.Forms.Button
     Friend WithEvents Booking As Windows.Forms.Button
     Friend WithEvents InputText1 As Windows.Forms.Label
-    Friend WithEvents FieldNOInput As Windows.Forms.TextBox
-    Friend WithEvents Field_MyinfoPanel As Windows.Forms.Panel
+    Friend WithEvents FieldInput As Windows.Forms.TextBox
+    Friend WithEvents MyFieldPanel As Windows.Forms.Panel
+    Friend WithEvents DataGridView2 As Windows.Forms.DataGridView
+    Friend WithEvents Waiting As Windows.Forms.Button
+    Friend WithEvents ToShare As Windows.Forms.Button
+    Friend WithEvents Paying As Windows.Forms.Button
+    Friend WithEvents Unsubscribe As Windows.Forms.Button
+    Friend WithEvents DataGridView3 As Windows.Forms.DataGridView
+    Friend WithEvents JoinGame As Windows.Forms.Button
+    Friend WithEvents GameLabel3 As Windows.Forms.Label
+    Friend WithEvents GameLabel2 As Windows.Forms.Label
+    Friend WithEvents DataGridView4 As Windows.Forms.DataGridView
+    Friend WithEvents ListView1 As Windows.Forms.ListView
+    Friend WithEvents ColumnHeader1 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader2 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader3 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader4 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader5 As Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader6 As Windows.Forms.ColumnHeader
+    Friend WithEvents FeedbackContainer As Windows.Forms.SplitContainer
+    Friend WithEvents Maintenace As Windows.Forms.Button
+    Friend WithEvents Problem As Windows.Forms.Button
+    Friend WithEvents Panel2 As Windows.Forms.Panel
+    Friend WithEvents Panel1 As Windows.Forms.Panel
 End Class
