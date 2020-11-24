@@ -64,7 +64,7 @@
     <None Include="My Project\app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="field\student-UI.resx">
+    <EmbeddedResource Include="UI\student-UI.resx">
       <DependentUpon>student-UI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login\Login.resx">
@@ -80,10 +80,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="field\student-UI.Designer.vb">
+    <Compile Include="UI\Manager-UI.Designer.vb">
+      <DependentUpon>Manager-UI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Manager-UI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\student-UI.Designer.vb">
       <DependentUpon>student-UI.vb</DependentUpon>
     </Compile>
-    <Compile Include="field\student-UI.vb">
+    <Compile Include="UI\student-UI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login\Login.Designer.vb">
@@ -102,6 +108,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\teacher-UI.Designer.vb">
+      <DependentUpon>teacher-UI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\teacher-UI.vb">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

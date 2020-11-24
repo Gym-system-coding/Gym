@@ -23,6 +23,8 @@ Partial Class student_UI
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Logout = New System.Windows.Forms.LinkLabel()
         Me.Message = New System.Windows.Forms.Label()
         Me.UserName = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -30,8 +32,6 @@ Partial Class student_UI
         Me.GameInfo = New System.Windows.Forms.Label()
         Me.FieldInfo = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Logout = New System.Windows.Forms.LinkLabel()
-        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
@@ -59,6 +59,32 @@ Partial Class student_UI
         Me.SplitContainer1.Size = New System.Drawing.Size(865, 500)
         Me.SplitContainer1.SplitterDistance = 52
         Me.SplitContainer1.TabIndex = 0
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(580, 10)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(46, 31)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "其他"
+        Me.Label2.UseCompatibleTextRendering = True
+        '
+        'Logout
+        '
+        Me.Logout.ActiveLinkColor = System.Drawing.Color.White
+        Me.Logout.AutoSize = True
+        Me.Logout.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Logout.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Logout.LinkColor = System.Drawing.Color.DarkBlue
+        Me.Logout.Location = New System.Drawing.Point(823, 0)
+        Me.Logout.Name = "Logout"
+        Me.Logout.Size = New System.Drawing.Size(42, 22)
+        Me.Logout.TabIndex = 7
+        Me.Logout.TabStop = True
+        Me.Logout.Text = "退出"
         '
         'Message
         '
@@ -141,32 +167,6 @@ Partial Class student_UI
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "学生专区"
         Me.Label1.UseCompatibleTextRendering = True
-        '
-        'Logout
-        '
-        Me.Logout.ActiveLinkColor = System.Drawing.Color.White
-        Me.Logout.AutoSize = True
-        Me.Logout.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Logout.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Logout.LinkColor = System.Drawing.Color.DarkBlue
-        Me.Logout.Location = New System.Drawing.Point(823, 0)
-        Me.Logout.Name = "Logout"
-        Me.Logout.Size = New System.Drawing.Size(42, 22)
-        Me.Logout.TabIndex = 7
-        Me.Logout.TabStop = True
-        Me.Logout.Text = "退出"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(580, 10)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 31)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "其他"
-        Me.Label2.UseCompatibleTextRendering = True
         '
         'student_UI
         '
