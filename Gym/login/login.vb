@@ -41,7 +41,11 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If True Then    'todo 待改 根据用户户名
             Dim stu = New student_UI
+            Me.Hide()
             stu.Show()
+        Else
+            Dim main = New Mainpage
+            main.Show()
         End If
     End Sub
 End Class
