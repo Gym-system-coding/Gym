@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class login
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
@@ -22,18 +22,18 @@ Partial Class login
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.UsernameBox = New System.Windows.Forms.TextBox()
         Me.PasswordBox = New System.Windows.Forms.TextBox()
         Me.IdentityBox = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.Root = New System.Windows.Forms.SplitContainer()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer1.Panel1.SuspendLayout()
-        Me.SplitContainer1.Panel2.SuspendLayout()
-        Me.SplitContainer1.SuspendLayout()
+        CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Root.Panel1.SuspendLayout()
+        Me.Root.Panel2.SuspendLayout()
+        Me.Root.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +41,7 @@ Partial Class login
         '
         Me.UsernameBox.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.UsernameBox.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.UsernameBox.Location = New System.Drawing.Point(92, 98)
+        Me.UsernameBox.Location = New System.Drawing.Point(91, 54)
         Me.UsernameBox.Name = "UsernameBox"
         Me.UsernameBox.Size = New System.Drawing.Size(180, 26)
         Me.UsernameBox.TabIndex = 0
@@ -51,7 +51,7 @@ Partial Class login
         '
         Me.PasswordBox.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.PasswordBox.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.PasswordBox.Location = New System.Drawing.Point(92, 137)
+        Me.PasswordBox.Location = New System.Drawing.Point(91, 93)
         Me.PasswordBox.Name = "PasswordBox"
         Me.PasswordBox.Size = New System.Drawing.Size(180, 26)
         Me.PasswordBox.TabIndex = 1
@@ -63,7 +63,7 @@ Partial Class login
         Me.IdentityBox.ForeColor = System.Drawing.SystemColors.ActiveBorder
         Me.IdentityBox.FormattingEnabled = True
         Me.IdentityBox.Items.AddRange(New Object() {"学生", "教师", "体育部门", "管理部门", "维护部门"})
-        Me.IdentityBox.Location = New System.Drawing.Point(92, 176)
+        Me.IdentityBox.Location = New System.Drawing.Point(91, 132)
         Me.IdentityBox.Name = "IdentityBox"
         Me.IdentityBox.Size = New System.Drawing.Size(180, 24)
         Me.IdentityBox.TabIndex = 2
@@ -82,27 +82,33 @@ Partial Class login
         Me.Button1.Text = "登录"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'SplitContainer1
+        'Root
         '
-        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer1.Name = "SplitContainer1"
-        Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
+        Me.Root.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Root.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
+        Me.Root.IsSplitterFixed = True
+        Me.Root.Location = New System.Drawing.Point(0, 0)
+        Me.Root.Name = "Root"
+        Me.Root.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
-        'SplitContainer1.Panel1
+        'Root.Panel1
         '
-        Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.SplitContainer1.Panel1.Controls.Add(Me.Label1)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Root.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Root.Panel1.Controls.Add(Me.Label1)
+        Me.Root.Panel1.Controls.Add(Me.PictureBox1)
         '
-        'SplitContainer1.Panel2
+        'Root.Panel2
         '
-        Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
-        Me.SplitContainer1.Panel2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.SplitContainer1.Size = New System.Drawing.Size(375, 315)
-        Me.SplitContainer1.SplitterDistance = 36
-        Me.SplitContainer1.TabIndex = 4
+        Me.Root.Panel2.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Root.Panel2.Controls.Add(Me.UsernameBox)
+        Me.Root.Panel2.Controls.Add(Me.PasswordBox)
+        Me.Root.Panel2.Controls.Add(Me.IdentityBox)
+        Me.Root.Panel2.Controls.Add(Me.Button1)
+        Me.Root.Panel2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Root.Size = New System.Drawing.Size(375, 315)
+        Me.Root.SplitterDistance = 36
+        Me.Root.SplitterWidth = 2
+        Me.Root.TabIndex = 4
         '
         'Label1
         '
@@ -125,29 +131,26 @@ Partial Class login
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'login
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(375, 315)
-        Me.Controls.Add(Me.IdentityBox)
-        Me.Controls.Add(Me.PasswordBox)
-        Me.Controls.Add(Me.UsernameBox)
-        Me.Controls.Add(Me.SplitContainer1)
+        Me.Controls.Add(Me.Root)
         Me.ForeColor = System.Drawing.Color.Black
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Location = New System.Drawing.Point(200, 500)
-        Me.Name = "login"
+        Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "登录"
-        Me.SplitContainer1.Panel1.ResumeLayout(False)
-        Me.SplitContainer1.Panel1.PerformLayout()
-        Me.SplitContainer1.Panel2.ResumeLayout(False)
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SplitContainer1.ResumeLayout(False)
+        Me.Root.Panel1.ResumeLayout(False)
+        Me.Root.Panel1.PerformLayout()
+        Me.Root.Panel2.ResumeLayout(False)
+        Me.Root.Panel2.PerformLayout()
+        CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Root.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -155,7 +158,7 @@ Partial Class login
     Friend WithEvents PasswordBox As Windows.Forms.TextBox
     Friend WithEvents IdentityBox As Windows.Forms.ComboBox
     Friend WithEvents Button1 As Windows.Forms.Button
-    Friend WithEvents SplitContainer1 As Windows.Forms.SplitContainer
+    Friend WithEvents Root As Windows.Forms.SplitContainer
     Friend WithEvents Label1 As Windows.Forms.Label
     Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
 End Class
