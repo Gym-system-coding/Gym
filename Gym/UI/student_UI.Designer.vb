@@ -41,15 +41,21 @@ Partial Class Student_UI
         Me.GameInfo = New System.Windows.Forms.Label()
         Me.FieldInfo = New System.Windows.Forms.Label()
         Me.StudentUIText = New System.Windows.Forms.Label()
+        Me.TrainingPanel = New System.Windows.Forms.Panel()
+        Me.TrainingApplying = New System.Windows.Forms.Button()
+        Me.SelectLesson = New System.Windows.Forms.ComboBox()
+        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
+        Me.TrainingLabel1 = New System.Windows.Forms.Label()
+        Me.GamePanel = New System.Windows.Forms.Panel()
+        Me.JoinGame = New System.Windows.Forms.Button()
+        Me.GameLabel3 = New System.Windows.Forms.Label()
+        Me.GameLabel2 = New System.Windows.Forms.Label()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.FieldPanel = New System.Windows.Forms.Panel()
         Me.FieldContainer = New System.Windows.Forms.SplitContainer()
         Me.MyField = New System.Windows.Forms.Button()
         Me.SearchField = New System.Windows.Forms.Button()
-        Me.MyFieldPanel = New System.Windows.Forms.Panel()
-        Me.ToShare = New System.Windows.Forms.Button()
-        Me.Paying = New System.Windows.Forms.Button()
-        Me.Unsubscribe = New System.Windows.Forms.Button()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.SearchFieldPanel = New System.Windows.Forms.Panel()
         Me.Waiting = New System.Windows.Forms.Button()
         Me.Sharing = New System.Windows.Forms.Button()
@@ -62,7 +68,16 @@ Partial Class Student_UI
         Me.SelectField = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.MyFieldPanel = New System.Windows.Forms.Panel()
+        Me.ToShare = New System.Windows.Forms.Button()
+        Me.Paying = New System.Windows.Forms.Button()
+        Me.Unsubscribe = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.MessagePanel = New System.Windows.Forms.Panel()
+        Me.MessageContainer = New System.Windows.Forms.SplitContainer()
+        Me.Report = New System.Windows.Forms.Button()
+        Me.GeneralMessage = New System.Windows.Forms.Button()
+        Me.MessageGeneralPanel = New System.Windows.Forms.Panel()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -70,35 +85,20 @@ Partial Class Student_UI
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.MessageReportPanel = New System.Windows.Forms.Panel()
         Me.FeedbackPanel = New System.Windows.Forms.Panel()
         Me.FeedbackContainer = New System.Windows.Forms.SplitContainer()
         Me.Maintenace = New System.Windows.Forms.Button()
         Me.Problem = New System.Windows.Forms.Button()
-        Me.MaintenancePanel = New System.Windows.Forms.Panel()
         Me.ProblemPanel = New System.Windows.Forms.Panel()
-        Me.TrainingPanel = New System.Windows.Forms.Panel()
-        Me.TrainingApplying = New System.Windows.Forms.Button()
-        Me.SelectLesson = New System.Windows.Forms.ComboBox()
-        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
-        Me.TrainingLabel1 = New System.Windows.Forms.Label()
-        Me.GamePanel = New System.Windows.Forms.Panel()
-        Me.JoinGame = New System.Windows.Forms.Button()
-        Me.GameLabel3 = New System.Windows.Forms.Label()
-        Me.GameLabel2 = New System.Windows.Forms.Label()
-        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.MessageContainer = New System.Windows.Forms.SplitContainer()
-        Me.MessageGeneralPanel = New System.Windows.Forms.Panel()
-        Me.MessageReportPanel = New System.Windows.Forms.Panel()
-        Me.GeneralMessage = New System.Windows.Forms.Button()
-        Me.Report = New System.Windows.Forms.Button()
-        Me.GymNOInput = New System.Windows.Forms.TextBox()
-        Me.SelectProblemType = New System.Windows.Forms.ComboBox()
-        Me.ProblemDescribe = New System.Windows.Forms.RichTextBox()
         Me.ProblemSubmit = New System.Windows.Forms.Button()
+        Me.ProblemDescribe = New System.Windows.Forms.RichTextBox()
+        Me.SelectProblemType = New System.Windows.Forms.ComboBox()
+        Me.GymNOInput = New System.Windows.Forms.TextBox()
         Me.ProblemLabel1 = New System.Windows.Forms.Label()
         Me.ProblemLabel2 = New System.Windows.Forms.Label()
         Me.ProblemLabel3 = New System.Windows.Forms.Label()
+        Me.MaintenancePanel = New System.Windows.Forms.Panel()
         Me.MaintenanceSubmit = New System.Windows.Forms.Button()
         Me.MaintenanceDescribe = New System.Windows.Forms.RichTextBox()
         Me.SelectMaintenanceType = New System.Windows.Forms.ComboBox()
@@ -110,33 +110,33 @@ Partial Class Student_UI
         Me.Root.Panel1.SuspendLayout()
         Me.Root.Panel2.SuspendLayout()
         Me.Root.SuspendLayout()
-        Me.FieldPanel.SuspendLayout()
-        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FieldContainer.Panel1.SuspendLayout()
-        Me.FieldContainer.Panel2.SuspendLayout()
-        Me.FieldContainer.SuspendLayout()
-        Me.MyFieldPanel.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SearchFieldPanel.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MessagePanel.SuspendLayout()
-        Me.FeedbackPanel.SuspendLayout()
-        CType(Me.FeedbackContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FeedbackContainer.Panel1.SuspendLayout()
-        Me.FeedbackContainer.Panel2.SuspendLayout()
-        Me.FeedbackContainer.SuspendLayout()
-        Me.MaintenancePanel.SuspendLayout()
-        Me.ProblemPanel.SuspendLayout()
         Me.TrainingPanel.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GamePanel.SuspendLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FieldPanel.SuspendLayout()
+        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FieldContainer.Panel1.SuspendLayout()
+        Me.FieldContainer.Panel2.SuspendLayout()
+        Me.FieldContainer.SuspendLayout()
+        Me.SearchFieldPanel.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MyFieldPanel.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MessagePanel.SuspendLayout()
         CType(Me.MessageContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessageContainer.Panel1.SuspendLayout()
         Me.MessageContainer.Panel2.SuspendLayout()
         Me.MessageContainer.SuspendLayout()
         Me.MessageGeneralPanel.SuspendLayout()
+        Me.FeedbackPanel.SuspendLayout()
+        CType(Me.FeedbackContainer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FeedbackContainer.Panel1.SuspendLayout()
+        Me.FeedbackContainer.Panel2.SuspendLayout()
+        Me.FeedbackContainer.SuspendLayout()
+        Me.ProblemPanel.SuspendLayout()
+        Me.MaintenancePanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'Root
@@ -296,6 +296,119 @@ Partial Class Student_UI
         Me.StudentUIText.Text = "学生专区"
         Me.StudentUIText.UseCompatibleTextRendering = True
         '
+        'TrainingPanel
+        '
+        Me.TrainingPanel.Controls.Add(Me.TrainingApplying)
+        Me.TrainingPanel.Controls.Add(Me.SelectLesson)
+        Me.TrainingPanel.Controls.Add(Me.DataGridView5)
+        Me.TrainingPanel.Controls.Add(Me.TrainingLabel1)
+        Me.TrainingPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TrainingPanel.Location = New System.Drawing.Point(0, 0)
+        Me.TrainingPanel.Name = "TrainingPanel"
+        Me.TrainingPanel.Size = New System.Drawing.Size(865, 444)
+        Me.TrainingPanel.TabIndex = 2
+        Me.TrainingPanel.Visible = False
+        '
+        'TrainingApplying
+        '
+        Me.TrainingApplying.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TrainingApplying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.TrainingApplying.Location = New System.Drawing.Point(490, 45)
+        Me.TrainingApplying.Name = "TrainingApplying"
+        Me.TrainingApplying.Size = New System.Drawing.Size(95, 23)
+        Me.TrainingApplying.TabIndex = 12
+        Me.TrainingApplying.Text = "申请教学"
+        Me.TrainingApplying.UseVisualStyleBackColor = False
+        '
+        'SelectLesson
+        '
+        Me.SelectLesson.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SelectLesson.FormattingEnabled = True
+        Me.SelectLesson.Items.AddRange(New Object() {"篮球", "排球", "羽毛球", "乒乓球", "棒垒球", "网球"})
+        Me.SelectLesson.Location = New System.Drawing.Point(344, 47)
+        Me.SelectLesson.Name = "SelectLesson"
+        Me.SelectLesson.Size = New System.Drawing.Size(121, 20)
+        Me.SelectLesson.TabIndex = 2
+        '
+        'DataGridView5
+        '
+        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView5.Location = New System.Drawing.Point(219, 147)
+        Me.DataGridView5.Name = "DataGridView5"
+        Me.DataGridView5.RowTemplate.Height = 23
+        Me.DataGridView5.Size = New System.Drawing.Size(414, 200)
+        Me.DataGridView5.TabIndex = 1
+        '
+        'TrainingLabel1
+        '
+        Me.TrainingLabel1.AutoSize = True
+        Me.TrainingLabel1.Location = New System.Drawing.Point(249, 50)
+        Me.TrainingLabel1.Name = "TrainingLabel1"
+        Me.TrainingLabel1.Size = New System.Drawing.Size(89, 12)
+        Me.TrainingLabel1.TabIndex = 0
+        Me.TrainingLabel1.Text = "选择体育项目："
+        '
+        'GamePanel
+        '
+        Me.GamePanel.Controls.Add(Me.JoinGame)
+        Me.GamePanel.Controls.Add(Me.GameLabel3)
+        Me.GamePanel.Controls.Add(Me.GameLabel2)
+        Me.GamePanel.Controls.Add(Me.DataGridView4)
+        Me.GamePanel.Controls.Add(Me.DataGridView3)
+        Me.GamePanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GamePanel.Location = New System.Drawing.Point(0, 0)
+        Me.GamePanel.Name = "GamePanel"
+        Me.GamePanel.Size = New System.Drawing.Size(865, 444)
+        Me.GamePanel.TabIndex = 1
+        Me.GamePanel.Visible = False
+        '
+        'JoinGame
+        '
+        Me.JoinGame.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.JoinGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.JoinGame.Location = New System.Drawing.Point(728, 118)
+        Me.JoinGame.Name = "JoinGame"
+        Me.JoinGame.Size = New System.Drawing.Size(75, 23)
+        Me.JoinGame.TabIndex = 12
+        Me.JoinGame.Text = "报名比赛"
+        Me.JoinGame.UseVisualStyleBackColor = False
+        '
+        'GameLabel3
+        '
+        Me.GameLabel3.AutoSize = True
+        Me.GameLabel3.Location = New System.Drawing.Point(53, 262)
+        Me.GameLabel3.Name = "GameLabel3"
+        Me.GameLabel3.Size = New System.Drawing.Size(53, 12)
+        Me.GameLabel3.TabIndex = 5
+        Me.GameLabel3.Text = "我的比赛"
+        '
+        'GameLabel2
+        '
+        Me.GameLabel2.AutoSize = True
+        Me.GameLabel2.Location = New System.Drawing.Point(36, 65)
+        Me.GameLabel2.Name = "GameLabel2"
+        Me.GameLabel2.Size = New System.Drawing.Size(53, 12)
+        Me.GameLabel2.TabIndex = 4
+        Me.GameLabel2.Text = "比赛信息"
+        '
+        'DataGridView4
+        '
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Location = New System.Drawing.Point(157, 262)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.RowTemplate.Height = 23
+        Me.DataGridView4.Size = New System.Drawing.Size(615, 150)
+        Me.DataGridView4.TabIndex = 3
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(157, 65)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.RowTemplate.Height = 23
+        Me.DataGridView3.Size = New System.Drawing.Size(516, 150)
+        Me.DataGridView3.TabIndex = 1
+        '
         'FieldPanel
         '
         Me.FieldPanel.Controls.Add(Me.FieldContainer)
@@ -347,60 +460,6 @@ Partial Class Student_UI
         Me.SearchField.TabIndex = 7
         Me.SearchField.Text = "查询场地"
         Me.SearchField.UseVisualStyleBackColor = False
-        '
-        'MyFieldPanel
-        '
-        Me.MyFieldPanel.Controls.Add(Me.ToShare)
-        Me.MyFieldPanel.Controls.Add(Me.Paying)
-        Me.MyFieldPanel.Controls.Add(Me.Unsubscribe)
-        Me.MyFieldPanel.Controls.Add(Me.DataGridView2)
-        Me.MyFieldPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MyFieldPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MyFieldPanel.Name = "MyFieldPanel"
-        Me.MyFieldPanel.Size = New System.Drawing.Size(733, 445)
-        Me.MyFieldPanel.TabIndex = 7
-        '
-        'ToShare
-        '
-        Me.ToShare.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ToShare.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ToShare.Location = New System.Drawing.Point(508, 87)
-        Me.ToShare.Name = "ToShare"
-        Me.ToShare.Size = New System.Drawing.Size(75, 23)
-        Me.ToShare.TabIndex = 12
-        Me.ToShare.Text = "发起拼场"
-        Me.ToShare.UseVisualStyleBackColor = False
-        '
-        'Paying
-        '
-        Me.Paying.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Paying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Paying.Location = New System.Drawing.Point(400, 87)
-        Me.Paying.Name = "Paying"
-        Me.Paying.Size = New System.Drawing.Size(75, 23)
-        Me.Paying.TabIndex = 11
-        Me.Paying.Text = "缴费"
-        Me.Paying.UseVisualStyleBackColor = False
-        '
-        'Unsubscribe
-        '
-        Me.Unsubscribe.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Unsubscribe.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Unsubscribe.Location = New System.Drawing.Point(281, 87)
-        Me.Unsubscribe.Name = "Unsubscribe"
-        Me.Unsubscribe.Size = New System.Drawing.Size(75, 23)
-        Me.Unsubscribe.TabIndex = 10
-        Me.Unsubscribe.Text = "退订"
-        Me.Unsubscribe.UseVisualStyleBackColor = False
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(97, 173)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowTemplate.Height = 23
-        Me.DataGridView2.Size = New System.Drawing.Size(543, 29)
-        Me.DataGridView2.TabIndex = 0
         '
         'SearchFieldPanel
         '
@@ -525,6 +584,60 @@ Partial Class Student_UI
         Me.DateTimePicker1.Size = New System.Drawing.Size(118, 21)
         Me.DateTimePicker1.TabIndex = 1
         '
+        'MyFieldPanel
+        '
+        Me.MyFieldPanel.Controls.Add(Me.ToShare)
+        Me.MyFieldPanel.Controls.Add(Me.Paying)
+        Me.MyFieldPanel.Controls.Add(Me.Unsubscribe)
+        Me.MyFieldPanel.Controls.Add(Me.DataGridView2)
+        Me.MyFieldPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MyFieldPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MyFieldPanel.Name = "MyFieldPanel"
+        Me.MyFieldPanel.Size = New System.Drawing.Size(733, 445)
+        Me.MyFieldPanel.TabIndex = 7
+        '
+        'ToShare
+        '
+        Me.ToShare.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.ToShare.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ToShare.Location = New System.Drawing.Point(508, 87)
+        Me.ToShare.Name = "ToShare"
+        Me.ToShare.Size = New System.Drawing.Size(75, 23)
+        Me.ToShare.TabIndex = 12
+        Me.ToShare.Text = "发起拼场"
+        Me.ToShare.UseVisualStyleBackColor = False
+        '
+        'Paying
+        '
+        Me.Paying.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Paying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Paying.Location = New System.Drawing.Point(400, 87)
+        Me.Paying.Name = "Paying"
+        Me.Paying.Size = New System.Drawing.Size(75, 23)
+        Me.Paying.TabIndex = 11
+        Me.Paying.Text = "缴费"
+        Me.Paying.UseVisualStyleBackColor = False
+        '
+        'Unsubscribe
+        '
+        Me.Unsubscribe.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Unsubscribe.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Unsubscribe.Location = New System.Drawing.Point(281, 87)
+        Me.Unsubscribe.Name = "Unsubscribe"
+        Me.Unsubscribe.Size = New System.Drawing.Size(75, 23)
+        Me.Unsubscribe.TabIndex = 10
+        Me.Unsubscribe.Text = "退订"
+        Me.Unsubscribe.UseVisualStyleBackColor = False
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(97, 173)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowTemplate.Height = 23
+        Me.DataGridView2.Size = New System.Drawing.Size(543, 29)
+        Me.DataGridView2.TabIndex = 0
+        '
         'MessagePanel
         '
         Me.MessagePanel.Controls.Add(Me.MessageContainer)
@@ -534,6 +647,59 @@ Partial Class Student_UI
         Me.MessagePanel.Size = New System.Drawing.Size(865, 444)
         Me.MessagePanel.TabIndex = 4
         Me.MessagePanel.Visible = False
+        '
+        'MessageContainer
+        '
+        Me.MessageContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
+        Me.MessageContainer.IsSplitterFixed = True
+        Me.MessageContainer.Location = New System.Drawing.Point(68, -1)
+        Me.MessageContainer.Name = "MessageContainer"
+        '
+        'MessageContainer.Panel1
+        '
+        Me.MessageContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.MessageContainer.Panel1.Controls.Add(Me.Report)
+        Me.MessageContainer.Panel1.Controls.Add(Me.GeneralMessage)
+        '
+        'MessageContainer.Panel2
+        '
+        Me.MessageContainer.Panel2.Controls.Add(Me.MessageGeneralPanel)
+        Me.MessageContainer.Panel2.Controls.Add(Me.MessageReportPanel)
+        Me.MessageContainer.Size = New System.Drawing.Size(797, 445)
+        Me.MessageContainer.SplitterDistance = 108
+        Me.MessageContainer.SplitterWidth = 1
+        Me.MessageContainer.TabIndex = 4
+        '
+        'Report
+        '
+        Me.Report.BackColor = System.Drawing.Color.AliceBlue
+        Me.Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Report.Location = New System.Drawing.Point(0, 20)
+        Me.Report.Name = "Report"
+        Me.Report.Size = New System.Drawing.Size(108, 23)
+        Me.Report.TabIndex = 10
+        Me.Report.Text = "查看报表"
+        Me.Report.UseVisualStyleBackColor = False
+        '
+        'GeneralMessage
+        '
+        Me.GeneralMessage.BackColor = System.Drawing.Color.AliceBlue
+        Me.GeneralMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GeneralMessage.Location = New System.Drawing.Point(0, 0)
+        Me.GeneralMessage.Name = "GeneralMessage"
+        Me.GeneralMessage.Size = New System.Drawing.Size(108, 23)
+        Me.GeneralMessage.TabIndex = 9
+        Me.GeneralMessage.Text = "查看消息"
+        Me.GeneralMessage.UseVisualStyleBackColor = False
+        '
+        'MessageGeneralPanel
+        '
+        Me.MessageGeneralPanel.Controls.Add(Me.ListView1)
+        Me.MessageGeneralPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MessageGeneralPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MessageGeneralPanel.Name = "MessageGeneralPanel"
+        Me.MessageGeneralPanel.Size = New System.Drawing.Size(688, 445)
+        Me.MessageGeneralPanel.TabIndex = 4
         '
         'ListView1
         '
@@ -578,6 +744,14 @@ Partial Class Student_UI
         'ColumnHeader6
         '
         Me.ColumnHeader6.Text = "ddd"
+        '
+        'MessageReportPanel
+        '
+        Me.MessageReportPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MessageReportPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MessageReportPanel.Name = "MessageReportPanel"
+        Me.MessageReportPanel.Size = New System.Drawing.Size(688, 445)
+        Me.MessageReportPanel.TabIndex = 5
         '
         'FeedbackPanel
         '
@@ -633,21 +807,6 @@ Partial Class Student_UI
         Me.Problem.Text = "问题反馈"
         Me.Problem.UseVisualStyleBackColor = False
         '
-        'MaintenancePanel
-        '
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceSubmit)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceDescribe)
-        Me.MaintenancePanel.Controls.Add(Me.SelectMaintenanceType)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceInput)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel1)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel2)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel3)
-        Me.MaintenancePanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MaintenancePanel.Location = New System.Drawing.Point(0, 0)
-        Me.MaintenancePanel.Name = "MaintenancePanel"
-        Me.MaintenancePanel.Size = New System.Drawing.Size(700, 445)
-        Me.MaintenancePanel.TabIndex = 1
-        '
         'ProblemPanel
         '
         Me.ProblemPanel.Controls.Add(Me.ProblemSubmit)
@@ -663,203 +822,6 @@ Partial Class Student_UI
         Me.ProblemPanel.Size = New System.Drawing.Size(700, 445)
         Me.ProblemPanel.TabIndex = 0
         '
-        'TrainingPanel
-        '
-        Me.TrainingPanel.Controls.Add(Me.TrainingApplying)
-        Me.TrainingPanel.Controls.Add(Me.SelectLesson)
-        Me.TrainingPanel.Controls.Add(Me.DataGridView5)
-        Me.TrainingPanel.Controls.Add(Me.TrainingLabel1)
-        Me.TrainingPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TrainingPanel.Location = New System.Drawing.Point(0, 0)
-        Me.TrainingPanel.Name = "TrainingPanel"
-        Me.TrainingPanel.Size = New System.Drawing.Size(865, 444)
-        Me.TrainingPanel.TabIndex = 2
-        Me.TrainingPanel.Visible = False
-        '
-        'TrainingApplying
-        '
-        Me.TrainingApplying.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TrainingApplying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.TrainingApplying.Location = New System.Drawing.Point(490, 45)
-        Me.TrainingApplying.Name = "TrainingApplying"
-        Me.TrainingApplying.Size = New System.Drawing.Size(95, 23)
-        Me.TrainingApplying.TabIndex = 12
-        Me.TrainingApplying.Text = "申请教学"
-        Me.TrainingApplying.UseVisualStyleBackColor = False
-        '
-        'SelectLesson
-        '
-        Me.SelectLesson.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.SelectLesson.FormattingEnabled = True
-        Me.SelectLesson.Items.AddRange(New Object() {"篮球", "排球", "羽毛球", "乒乓球", "棒垒球", "网球"})
-        Me.SelectLesson.Location = New System.Drawing.Point(344, 47)
-        Me.SelectLesson.Name = "SelectLesson"
-        Me.SelectLesson.Size = New System.Drawing.Size(121, 20)
-        Me.SelectLesson.TabIndex = 2
-        '
-        'DataGridView5
-        '
-        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView5.Location = New System.Drawing.Point(219, 147)
-        Me.DataGridView5.Name = "DataGridView5"
-        Me.DataGridView5.RowTemplate.Height = 23
-        Me.DataGridView5.Size = New System.Drawing.Size(414, 200)
-        Me.DataGridView5.TabIndex = 1
-        '
-        'TrainingLabel1
-        '
-        Me.TrainingLabel1.AutoSize = True
-        Me.TrainingLabel1.Location = New System.Drawing.Point(249, 50)
-        Me.TrainingLabel1.Name = "TrainingLabel1"
-        Me.TrainingLabel1.Size = New System.Drawing.Size(89, 12)
-        Me.TrainingLabel1.TabIndex = 0
-        Me.TrainingLabel1.Text = "选择体育项目："
-        '
-        'GamePanel
-        '
-        Me.GamePanel.Controls.Add(Me.JoinGame)
-        Me.GamePanel.Controls.Add(Me.GameLabel3)
-        Me.GamePanel.Controls.Add(Me.GameLabel2)
-        Me.GamePanel.Controls.Add(Me.DataGridView4)
-        Me.GamePanel.Controls.Add(Me.DataGridView3)
-        Me.GamePanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GamePanel.Location = New System.Drawing.Point(0, 0)
-        Me.GamePanel.Name = "GamePanel"
-        Me.GamePanel.Size = New System.Drawing.Size(865, 444)
-        Me.GamePanel.TabIndex = 1
-        Me.GamePanel.Visible = False
-        '
-        'JoinGame
-        '
-        Me.JoinGame.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.JoinGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.JoinGame.Location = New System.Drawing.Point(728, 118)
-        Me.JoinGame.Name = "JoinGame"
-        Me.JoinGame.Size = New System.Drawing.Size(75, 23)
-        Me.JoinGame.TabIndex = 12
-        Me.JoinGame.Text = "报名比赛"
-        Me.JoinGame.UseVisualStyleBackColor = False
-        '
-        'GameLabel3
-        '
-        Me.GameLabel3.AutoSize = True
-        Me.GameLabel3.Location = New System.Drawing.Point(53, 262)
-        Me.GameLabel3.Name = "GameLabel3"
-        Me.GameLabel3.Size = New System.Drawing.Size(53, 12)
-        Me.GameLabel3.TabIndex = 5
-        Me.GameLabel3.Text = "我的比赛"
-        '
-        'GameLabel2
-        '
-        Me.GameLabel2.AutoSize = True
-        Me.GameLabel2.Location = New System.Drawing.Point(36, 65)
-        Me.GameLabel2.Name = "GameLabel2"
-        Me.GameLabel2.Size = New System.Drawing.Size(53, 12)
-        Me.GameLabel2.TabIndex = 4
-        Me.GameLabel2.Text = "比赛信息"
-        '
-        'DataGridView4
-        '
-        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView4.Location = New System.Drawing.Point(157, 262)
-        Me.DataGridView4.Name = "DataGridView4"
-        Me.DataGridView4.RowTemplate.Height = 23
-        Me.DataGridView4.Size = New System.Drawing.Size(615, 150)
-        Me.DataGridView4.TabIndex = 3
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Location = New System.Drawing.Point(157, 65)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.RowTemplate.Height = 23
-        Me.DataGridView3.Size = New System.Drawing.Size(516, 150)
-        Me.DataGridView3.TabIndex = 1
-        '
-        'MessageContainer
-        '
-        Me.MessageContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
-        Me.MessageContainer.IsSplitterFixed = True
-        Me.MessageContainer.Location = New System.Drawing.Point(68, -1)
-        Me.MessageContainer.Name = "MessageContainer"
-        '
-        'MessageContainer.Panel1
-        '
-        Me.MessageContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.MessageContainer.Panel1.Controls.Add(Me.Report)
-        Me.MessageContainer.Panel1.Controls.Add(Me.GeneralMessage)
-        '
-        'MessageContainer.Panel2
-        '
-        Me.MessageContainer.Panel2.Controls.Add(Me.MessageGeneralPanel)
-        Me.MessageContainer.Panel2.Controls.Add(Me.MessageReportPanel)
-        Me.MessageContainer.Size = New System.Drawing.Size(797, 445)
-        Me.MessageContainer.SplitterDistance = 108
-        Me.MessageContainer.SplitterWidth = 1
-        Me.MessageContainer.TabIndex = 4
-        '
-        'MessageGeneralPanel
-        '
-        Me.MessageGeneralPanel.Controls.Add(Me.ListView1)
-        Me.MessageGeneralPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MessageGeneralPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MessageGeneralPanel.Name = "MessageGeneralPanel"
-        Me.MessageGeneralPanel.Size = New System.Drawing.Size(688, 445)
-        Me.MessageGeneralPanel.TabIndex = 4
-        '
-        'MessageReportPanel
-        '
-        Me.MessageReportPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MessageReportPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MessageReportPanel.Name = "MessageReportPanel"
-        Me.MessageReportPanel.Size = New System.Drawing.Size(688, 445)
-        Me.MessageReportPanel.TabIndex = 5
-        '
-        'GeneralMessage
-        '
-        Me.GeneralMessage.BackColor = System.Drawing.Color.AliceBlue
-        Me.GeneralMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GeneralMessage.Location = New System.Drawing.Point(0, 0)
-        Me.GeneralMessage.Name = "GeneralMessage"
-        Me.GeneralMessage.Size = New System.Drawing.Size(108, 23)
-        Me.GeneralMessage.TabIndex = 9
-        Me.GeneralMessage.Text = "查看消息"
-        Me.GeneralMessage.UseVisualStyleBackColor = False
-        '
-        'Report
-        '
-        Me.Report.BackColor = System.Drawing.Color.AliceBlue
-        Me.Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Report.Location = New System.Drawing.Point(0, 20)
-        Me.Report.Name = "Report"
-        Me.Report.Size = New System.Drawing.Size(108, 23)
-        Me.Report.TabIndex = 10
-        Me.Report.Text = "查看报表"
-        Me.Report.UseVisualStyleBackColor = False
-        '
-        'GymNOInput
-        '
-        Me.GymNOInput.Location = New System.Drawing.Point(191, 57)
-        Me.GymNOInput.Name = "GymNOInput"
-        Me.GymNOInput.Size = New System.Drawing.Size(100, 21)
-        Me.GymNOInput.TabIndex = 0
-        '
-        'SelectProblemType
-        '
-        Me.SelectProblemType.FormattingEnabled = True
-        Me.SelectProblemType.Location = New System.Drawing.Point(402, 57)
-        Me.SelectProblemType.Name = "SelectProblemType"
-        Me.SelectProblemType.Size = New System.Drawing.Size(121, 20)
-        Me.SelectProblemType.TabIndex = 1
-        '
-        'ProblemDescribe
-        '
-        Me.ProblemDescribe.Location = New System.Drawing.Point(191, 144)
-        Me.ProblemDescribe.Name = "ProblemDescribe"
-        Me.ProblemDescribe.Size = New System.Drawing.Size(400, 152)
-        Me.ProblemDescribe.TabIndex = 2
-        Me.ProblemDescribe.Text = ""
-        '
         'ProblemSubmit
         '
         Me.ProblemSubmit.BackColor = System.Drawing.SystemColors.ButtonFace
@@ -870,6 +832,29 @@ Partial Class Student_UI
         Me.ProblemSubmit.TabIndex = 12
         Me.ProblemSubmit.Text = "提交"
         Me.ProblemSubmit.UseVisualStyleBackColor = False
+        '
+        'ProblemDescribe
+        '
+        Me.ProblemDescribe.Location = New System.Drawing.Point(191, 144)
+        Me.ProblemDescribe.Name = "ProblemDescribe"
+        Me.ProblemDescribe.Size = New System.Drawing.Size(400, 152)
+        Me.ProblemDescribe.TabIndex = 2
+        Me.ProblemDescribe.Text = ""
+        '
+        'SelectProblemType
+        '
+        Me.SelectProblemType.FormattingEnabled = True
+        Me.SelectProblemType.Location = New System.Drawing.Point(402, 57)
+        Me.SelectProblemType.Name = "SelectProblemType"
+        Me.SelectProblemType.Size = New System.Drawing.Size(121, 20)
+        Me.SelectProblemType.TabIndex = 1
+        '
+        'GymNOInput
+        '
+        Me.GymNOInput.Location = New System.Drawing.Point(191, 57)
+        Me.GymNOInput.Name = "GymNOInput"
+        Me.GymNOInput.Size = New System.Drawing.Size(100, 21)
+        Me.GymNOInput.TabIndex = 0
         '
         'ProblemLabel1
         '
@@ -897,6 +882,21 @@ Partial Class Student_UI
         Me.ProblemLabel3.Size = New System.Drawing.Size(65, 12)
         Me.ProblemLabel3.TabIndex = 15
         Me.ProblemLabel3.Text = "问题描述："
+        '
+        'MaintenancePanel
+        '
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceSubmit)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceDescribe)
+        Me.MaintenancePanel.Controls.Add(Me.SelectMaintenanceType)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceInput)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel1)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel2)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel3)
+        Me.MaintenancePanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MaintenancePanel.Location = New System.Drawing.Point(0, 0)
+        Me.MaintenancePanel.Name = "MaintenancePanel"
+        Me.MaintenancePanel.Size = New System.Drawing.Size(700, 445)
+        Me.MaintenancePanel.TabIndex = 1
         '
         'MaintenanceSubmit
         '
@@ -976,26 +976,6 @@ Partial Class Student_UI
         Me.Root.Panel2.ResumeLayout(False)
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Root.ResumeLayout(False)
-        Me.FieldPanel.ResumeLayout(False)
-        Me.FieldContainer.Panel1.ResumeLayout(False)
-        Me.FieldContainer.Panel2.ResumeLayout(False)
-        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FieldContainer.ResumeLayout(False)
-        Me.MyFieldPanel.ResumeLayout(False)
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SearchFieldPanel.ResumeLayout(False)
-        Me.SearchFieldPanel.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MessagePanel.ResumeLayout(False)
-        Me.FeedbackPanel.ResumeLayout(False)
-        Me.FeedbackContainer.Panel1.ResumeLayout(False)
-        Me.FeedbackContainer.Panel2.ResumeLayout(False)
-        CType(Me.FeedbackContainer, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FeedbackContainer.ResumeLayout(False)
-        Me.MaintenancePanel.ResumeLayout(False)
-        Me.MaintenancePanel.PerformLayout()
-        Me.ProblemPanel.ResumeLayout(False)
-        Me.ProblemPanel.PerformLayout()
         Me.TrainingPanel.ResumeLayout(False)
         Me.TrainingPanel.PerformLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1003,11 +983,31 @@ Partial Class Student_UI
         Me.GamePanel.PerformLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FieldPanel.ResumeLayout(False)
+        Me.FieldContainer.Panel1.ResumeLayout(False)
+        Me.FieldContainer.Panel2.ResumeLayout(False)
+        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FieldContainer.ResumeLayout(False)
+        Me.SearchFieldPanel.ResumeLayout(False)
+        Me.SearchFieldPanel.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MyFieldPanel.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MessagePanel.ResumeLayout(False)
         Me.MessageContainer.Panel1.ResumeLayout(False)
         Me.MessageContainer.Panel2.ResumeLayout(False)
         CType(Me.MessageContainer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessageContainer.ResumeLayout(False)
         Me.MessageGeneralPanel.ResumeLayout(False)
+        Me.FeedbackPanel.ResumeLayout(False)
+        Me.FeedbackContainer.Panel1.ResumeLayout(False)
+        Me.FeedbackContainer.Panel2.ResumeLayout(False)
+        CType(Me.FeedbackContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FeedbackContainer.ResumeLayout(False)
+        Me.ProblemPanel.ResumeLayout(False)
+        Me.ProblemPanel.PerformLayout()
+        Me.MaintenancePanel.ResumeLayout(False)
+        Me.MaintenancePanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
