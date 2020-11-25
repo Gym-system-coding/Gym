@@ -1,4 +1,4 @@
-﻿Public Class login
+﻿Public Class Login
     Private Sub UsernameBox_LostFocus(sender As Object, e As EventArgs) Handles UsernameBox.LostFocus
         If UsernameBox.Text = "" Then
             UsernameBox.Text = "用户名"

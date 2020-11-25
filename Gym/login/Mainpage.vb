@@ -3,7 +3,7 @@ Public Class Mainpage
     Public Shared M
     Private Sub Login_LinkClicked(sender As Object, e As Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Loginlink.LinkClicked
         M = Me
-        Dim lg As Form = New login
+        Dim lg As Form = New Login
         lg.Show()
     End Sub
 End Class
