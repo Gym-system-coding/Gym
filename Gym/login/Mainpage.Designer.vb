@@ -32,7 +32,7 @@ Partial Class Mainpage
         Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.loginlink = New System.Windows.Forms.LinkLabel()
+        Me.Loginlink = New System.Windows.Forms.LinkLabel()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer4 = New System.Windows.Forms.SplitContainer()
@@ -73,7 +73,7 @@ Partial Class Mainpage
         '
         Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox1)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.loginlink)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Loginlink)
         '
         'SplitContainer1.Panel2
         '
@@ -93,19 +93,19 @@ Partial Class Mainpage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'loginlink
+        'Loginlink
         '
-        Me.loginlink.ActiveLinkColor = System.Drawing.Color.White
-        Me.loginlink.AutoSize = True
-        Me.loginlink.Font = New System.Drawing.Font("思源黑体 Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.loginlink.LinkColor = System.Drawing.SystemColors.HotTrack
-        Me.loginlink.Location = New System.Drawing.Point(668, 19)
-        Me.loginlink.Name = "loginlink"
-        Me.loginlink.Size = New System.Drawing.Size(57, 30)
-        Me.loginlink.TabIndex = 0
-        Me.loginlink.TabStop = True
-        Me.loginlink.Text = "登录"
-        Me.loginlink.VisitedLinkColor = System.Drawing.SystemColors.HotTrack
+        Me.Loginlink.ActiveLinkColor = System.Drawing.Color.White
+        Me.Loginlink.AutoSize = True
+        Me.Loginlink.Font = New System.Drawing.Font("思源黑体 Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Loginlink.LinkColor = System.Drawing.SystemColors.HotTrack
+        Me.Loginlink.Location = New System.Drawing.Point(668, 19)
+        Me.Loginlink.Name = "Loginlink"
+        Me.Loginlink.Size = New System.Drawing.Size(57, 30)
+        Me.Loginlink.TabIndex = 0
+        Me.Loginlink.TabStop = True
+        Me.Loginlink.Text = "登录"
+        Me.Loginlink.VisitedLinkColor = System.Drawing.SystemColors.HotTrack
         '
         'SplitContainer2
         '
@@ -254,7 +254,7 @@ Partial Class Mainpage
 
     Friend WithEvents SplitContainer1 As Windows.Forms.SplitContainer
     Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
-    Public WithEvents loginlink As Windows.Forms.LinkLabel
+    Public WithEvents Loginlink As Windows.Forms.LinkLabel
     Friend WithEvents NewsList As Windows.Forms.ListBox
     Friend WithEvents SplitContainer2 As Windows.Forms.SplitContainer
     Friend WithEvents SplitContainer3 As Windows.Forms.SplitContainer

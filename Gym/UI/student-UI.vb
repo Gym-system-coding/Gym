@@ -1,4 +1,4 @@
-﻿Public Class student_UI
+﻿Public Class Student_UI
     Sub HideAll()
         FieldPanel.Hide()
         ChangeColor(FieldInfo, BackColor, "White")
@@ -44,8 +44,8 @@
     End Sub
 
     '---------------------------------------------------------------------------------
-
     '显示效果
+
     '顶栏按钮特效
     Private Sub FieldInfo_MouseHover(sender As Object, e As EventArgs) Handles FieldInfo.MouseHover
         ChangeColor(sender, ForeColor, "ActiveBorder")
@@ -81,7 +81,7 @@
         ChangeColor(sender, ForeColor, "White")
     End Sub
     '显示姓名
-    Private Sub student_UI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Student_UI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO 显示姓名
         'UserName.Text=
         Me.FieldInfo_Click(Me.FieldInfo, e)
@@ -90,16 +90,14 @@
     End Sub
 
     '--------------------------------------------------------------------------------
-
     '顶栏链接跳转
+
     '返回首页
     Private Sub HomePageLink_LinkClicked(sender As Object, e As Windows.Forms.LinkLabelLinkClickedEventArgs) Handles HomepageLink.LinkClicked
         HideAll()
     End Sub
     Private Sub LogoutLink_LinkClicked(sender As Object, e As Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LogoutLink.LinkClicked
-        Dim main = New Mainpage
         Me.Close()
-        'main.Show()
         Mainpage.M.show()
     End Sub
     '跳转场地信息页面
@@ -133,16 +131,21 @@
         HideAll()
         ChangeColor(sender, BackColor, "InactiveCaption")
         FeedbackPanel.Show()
-
+        ProblemPanel.Hide()
+        MaintenancePanel.Hide()
     End Sub
     '跳转通知页面
 
     '-----------------------------------------------------------
+    '场地部分
 
     Private Sub Message_Click(sender As Object, e As EventArgs) Handles Message.Click
         HideAll()
         ChangeColor(sender, BackColor, "InactiveCaption")
         MessagePanel.Show()
+        MessageGeneralPanel.Show()
+        MessageReportPanel.Hide()
+
     End Sub
     '跳转1-子页面：搜索场地信息页面
     Private Sub SearchField_Click(sender As Object, e As EventArgs) Handles SearchField.Click
@@ -221,6 +224,7 @@
 
 
     '-------------------------------------------------------------------------------------------------
+    '比赛部分
 
     Private Sub DataGridView3_CellContentClick(sender As Object, e As Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
         'TODO 链接数据库
@@ -228,14 +232,62 @@
     Private Sub DataGridView4_CellContentClick(sender As Object, e As Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView4.CellContentClick
         'TODO 链接数据库
     End Sub
-
     Private Sub JoinGame_Click(sender As Object, e As EventArgs) Handles JoinGame.Click
         'TODO 跳转选择页面
+        MsgBox("比赛报名成功")
     End Sub
 
+    '-------------------------------------------------------------------------------------------------
+    '培训部分
+
+    Private Sub TrainingApplying_Click(sender As Object, e As EventArgs) Handles TrainingApplying.Click
+        Dim w = Weekday(Now)
+        If (w = 1 Or w = 7) Then
+            MsgBox("当前不开放申请")
+        Else
+            'TODO 待完成
+            MsgBox("成功申请")
+        End If
+    End Sub
+    Private Sub DataGridView5_CellContentClick(sender As Object, e As Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView5.CellContentClick
+        'TODO 链接数据库
+    End Sub
+    Private Sub SelectLesson_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SelectLesson.SelectedIndexChanged
+        'TODO 待完成
+    End Sub
 
     '-------------------------------------------------------------------------------------------------
+    '消息部分
+
+    Private Sub GeneralMessage_Click(sender As Object, e As EventArgs) Handles GeneralMessage.Click
+        MessageGeneralPanel.Show()
+        MessageReportPanel.Hide()
+    End Sub
+    Private Sub Report_Click(sender As Object, e As EventArgs) Handles Report.Click
+        MessageReportPanel.Show()
+        MessageGeneralPanel.Hide()
+    End Sub
     Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
         'TODO 链接数据库
+    End Sub
+
+    '-------------------------------------------------------------------------------------------------
+    '反馈部分
+
+    Private Sub Problem_Click(sender As Object, e As EventArgs) Handles Problem.Click
+        ProblemPanel.Show()
+        MaintenancePanel.Hide()
+    End Sub
+    Private Sub Maintenace_Click(sender As Object, e As EventArgs) Handles Maintenace.Click
+        ProblemPanel.Hide()
+        MaintenancePanel.Show()
+    End Sub
+    Private Sub MaintenanceSubmit_Click(sender As Object, e As EventArgs) Handles MaintenanceSubmit.Click
+        'TODO 报修按钮
+        MsgBox("报修成功")
+    End Sub
+    Private Sub ProblemSubmit_Click(sender As Object, e As EventArgs) Handles ProblemSubmit.Click
+        'TODO 反馈按钮
+        MsgBox("问题反馈成功")
     End Sub
 End Class
