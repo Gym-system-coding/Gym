@@ -1,4 +1,4 @@
-﻿Public Class login
+﻿Public Class Login
     Private Sub UsernameBox_LostFocus(sender As Object, e As EventArgs) Handles UsernameBox.LostFocus
         If UsernameBox.Text = "" Then
             UsernameBox.Text = "用户名"
@@ -40,8 +40,37 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If True Then    'todo 待改 根据用户户名
-            Dim stu = New student_UI
-            stu.Show()
+            Select Case IdentityBox.Text
+
+                Case "学生"
+                    Dim form = New Student_UI
+                    form.Show()
+                    Mainpage.M.Hide()
+                    Me.Close()
+                Case "教师"
+                    Dim form = New Teacher_UI
+                    form.Show()
+                    Mainpage.M.Hide()
+                    Me.Close()
+                Case "体育部门"
+                    Dim form = New DeptPE_UI
+                    form.Show()
+                    Mainpage.M.Hide()
+                    Me.Close()
+                Case "管理部门"
+                    Dim form = New DeptManagement_UI
+                    form.Show()
+                    Mainpage.M.Hide()
+                    Me.Close()
+                Case "维护部门"
+                    Dim form = New DeptMaintain_UI
+                    form.Show()
+                    Mainpage.M.Hide()
+                    Me.Close()
+                Case Else
+                    MsgBox("类型错误")
+            End Select
+
         End If
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class startup
+Partial Class Mainpage
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
@@ -22,7 +22,7 @@ Partial Class startup
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(startup))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mainpage))
         Dim ListViewGroup1 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
         Dim ListViewGroup2 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
         Dim ListViewGroup3 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
@@ -30,9 +30,9 @@ Partial Class startup
         Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
         Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
         Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
-        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.Root = New System.Windows.Forms.SplitContainer()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.loginlink = New System.Windows.Forms.LinkLabel()
+        Me.Loginlink = New System.Windows.Forms.LinkLabel()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
         Me.SplitContainer4 = New System.Windows.Forms.SplitContainer()
@@ -45,10 +45,10 @@ Partial Class startup
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.NewsList = New System.Windows.Forms.ListBox()
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer1.Panel1.SuspendLayout()
-        Me.SplitContainer1.Panel2.SuspendLayout()
-        Me.SplitContainer1.SuspendLayout()
+        CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Root.Panel1.SuspendLayout()
+        Me.Root.Panel2.SuspendLayout()
+        Me.Root.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer2.Panel2.SuspendLayout()
@@ -62,26 +62,28 @@ Partial Class startup
         Me.SplitContainer4.SuspendLayout()
         Me.SuspendLayout()
         '
-        'SplitContainer1
+        'Root
         '
-        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer1.Name = "SplitContainer1"
-        Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
+        Me.Root.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Root.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
+        Me.Root.IsSplitterFixed = True
+        Me.Root.Location = New System.Drawing.Point(0, 0)
+        Me.Root.Name = "Root"
+        Me.Root.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
-        'SplitContainer1.Panel1
+        'Root.Panel1
         '
-        Me.SplitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.SplitContainer1.Panel1.Controls.Add(Me.PictureBox1)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.loginlink)
+        Me.Root.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Root.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Root.Panel1.Controls.Add(Me.Loginlink)
         '
-        'SplitContainer1.Panel2
+        'Root.Panel2
         '
-        Me.SplitContainer1.Panel2.AutoScroll = True
-        Me.SplitContainer1.Panel2.Controls.Add(Me.SplitContainer2)
-        Me.SplitContainer1.Size = New System.Drawing.Size(800, 450)
-        Me.SplitContainer1.SplitterDistance = 71
-        Me.SplitContainer1.TabIndex = 0
+        Me.Root.Panel2.AutoScroll = True
+        Me.Root.Panel2.Controls.Add(Me.SplitContainer2)
+        Me.Root.Size = New System.Drawing.Size(800, 450)
+        Me.Root.SplitterDistance = 71
+        Me.Root.TabIndex = 0
         '
         'PictureBox1
         '
@@ -93,19 +95,19 @@ Partial Class startup
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'loginlink
+        'Loginlink
         '
-        Me.loginlink.ActiveLinkColor = System.Drawing.Color.White
-        Me.loginlink.AutoSize = True
-        Me.loginlink.Font = New System.Drawing.Font("思源黑体 Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.loginlink.LinkColor = System.Drawing.SystemColors.HotTrack
-        Me.loginlink.Location = New System.Drawing.Point(668, 19)
-        Me.loginlink.Name = "loginlink"
-        Me.loginlink.Size = New System.Drawing.Size(57, 30)
-        Me.loginlink.TabIndex = 0
-        Me.loginlink.TabStop = True
-        Me.loginlink.Text = "登录"
-        Me.loginlink.VisitedLinkColor = System.Drawing.SystemColors.HotTrack
+        Me.Loginlink.ActiveLinkColor = System.Drawing.Color.White
+        Me.Loginlink.AutoSize = True
+        Me.Loginlink.Font = New System.Drawing.Font("思源黑体 Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Loginlink.LinkColor = System.Drawing.SystemColors.HotTrack
+        Me.Loginlink.Location = New System.Drawing.Point(668, 19)
+        Me.Loginlink.Name = "Loginlink"
+        Me.Loginlink.Size = New System.Drawing.Size(57, 30)
+        Me.Loginlink.TabIndex = 0
+        Me.Loginlink.TabStop = True
+        Me.Loginlink.Text = "登录"
+        Me.Loginlink.VisitedLinkColor = System.Drawing.SystemColors.HotTrack
         '
         'SplitContainer2
         '
@@ -221,20 +223,21 @@ Partial Class startup
         Me.NewsList.Size = New System.Drawing.Size(608, 338)
         Me.NewsList.TabIndex = 0
         '
-        'startup
+        'Mainpage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.SplitContainer1)
-        Me.Name = "startup"
+        Me.Controls.Add(Me.Root)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "Mainpage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
-        Me.SplitContainer1.Panel1.ResumeLayout(False)
-        Me.SplitContainer1.Panel1.PerformLayout()
-        Me.SplitContainer1.Panel2.ResumeLayout(False)
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SplitContainer1.ResumeLayout(False)
+        Me.Text = "主页"
+        Me.Root.Panel1.ResumeLayout(False)
+        Me.Root.Panel1.PerformLayout()
+        Me.Root.Panel2.ResumeLayout(False)
+        CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Root.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer2.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -251,9 +254,9 @@ Partial Class startup
 
     End Sub
 
-    Friend WithEvents SplitContainer1 As Windows.Forms.SplitContainer
+    Friend WithEvents Root As Windows.Forms.SplitContainer
     Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
-    Public WithEvents loginlink As Windows.Forms.LinkLabel
+    Public WithEvents Loginlink As Windows.Forms.LinkLabel
     Friend WithEvents NewsList As Windows.Forms.ListBox
     Friend WithEvents SplitContainer2 As Windows.Forms.SplitContainer
     Friend WithEvents SplitContainer3 As Windows.Forms.SplitContainer
