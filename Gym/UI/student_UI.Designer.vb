@@ -45,6 +45,11 @@ Partial Class Student_UI
         Me.FieldContainer = New System.Windows.Forms.SplitContainer()
         Me.MyField = New System.Windows.Forms.Button()
         Me.SearchField = New System.Windows.Forms.Button()
+        Me.MyFieldPanel = New System.Windows.Forms.Panel()
+        Me.ToShare = New System.Windows.Forms.Button()
+        Me.Paying = New System.Windows.Forms.Button()
+        Me.Unsubscribe = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.SearchFieldPanel = New System.Windows.Forms.Panel()
         Me.searching = New System.Windows.Forms.Button()
         Me.Waiting = New System.Windows.Forms.Button()
@@ -58,11 +63,6 @@ Partial Class Student_UI
         Me.SelectField = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.MyFieldPanel = New System.Windows.Forms.Panel()
-        Me.ToShare = New System.Windows.Forms.Button()
-        Me.Paying = New System.Windows.Forms.Button()
-        Me.Unsubscribe = New System.Windows.Forms.Button()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.MessagePanel = New System.Windows.Forms.Panel()
         Me.MessageContainer = New System.Windows.Forms.SplitContainer()
         Me.Report = New System.Windows.Forms.Button()
@@ -116,10 +116,10 @@ Partial Class Student_UI
         Me.FieldContainer.Panel1.SuspendLayout()
         Me.FieldContainer.Panel2.SuspendLayout()
         Me.FieldContainer.SuspendLayout()
-        Me.SearchFieldPanel.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MyFieldPanel.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SearchFieldPanel.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel.SuspendLayout()
         CType(Me.MessageContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessageContainer.Panel1.SuspendLayout()
@@ -334,8 +334,8 @@ Partial Class Student_UI
         '
         'FieldContainer.Panel2
         '
-        Me.FieldContainer.Panel2.Controls.Add(Me.MyFieldPanel)
         Me.FieldContainer.Panel2.Controls.Add(Me.SearchFieldPanel)
+        Me.FieldContainer.Panel2.Controls.Add(Me.MyFieldPanel)
         Me.FieldContainer.Size = New System.Drawing.Size(1119, 556)
         Me.FieldContainer.SplitterDistance = 140
         Me.FieldContainer.SplitterWidth = 1
@@ -364,6 +364,65 @@ Partial Class Student_UI
         Me.SearchField.TabIndex = 7
         Me.SearchField.Text = "查询场地"
         Me.SearchField.UseVisualStyleBackColor = False
+        '
+        'MyFieldPanel
+        '
+        Me.MyFieldPanel.Controls.Add(Me.ToShare)
+        Me.MyFieldPanel.Controls.Add(Me.Paying)
+        Me.MyFieldPanel.Controls.Add(Me.Unsubscribe)
+        Me.MyFieldPanel.Controls.Add(Me.DataGridView2)
+        Me.MyFieldPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MyFieldPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MyFieldPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.MyFieldPanel.Name = "MyFieldPanel"
+        Me.MyFieldPanel.Size = New System.Drawing.Size(978, 556)
+        Me.MyFieldPanel.TabIndex = 7
+        '
+        'ToShare
+        '
+        Me.ToShare.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.ToShare.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ToShare.Location = New System.Drawing.Point(677, 109)
+        Me.ToShare.Margin = New System.Windows.Forms.Padding(4)
+        Me.ToShare.Name = "ToShare"
+        Me.ToShare.Size = New System.Drawing.Size(100, 29)
+        Me.ToShare.TabIndex = 12
+        Me.ToShare.Text = "发起拼场"
+        Me.ToShare.UseVisualStyleBackColor = False
+        '
+        'Paying
+        '
+        Me.Paying.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Paying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Paying.Location = New System.Drawing.Point(533, 109)
+        Me.Paying.Margin = New System.Windows.Forms.Padding(4)
+        Me.Paying.Name = "Paying"
+        Me.Paying.Size = New System.Drawing.Size(100, 29)
+        Me.Paying.TabIndex = 11
+        Me.Paying.Text = "缴费"
+        Me.Paying.UseVisualStyleBackColor = False
+        '
+        'Unsubscribe
+        '
+        Me.Unsubscribe.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Unsubscribe.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Unsubscribe.Location = New System.Drawing.Point(375, 109)
+        Me.Unsubscribe.Margin = New System.Windows.Forms.Padding(4)
+        Me.Unsubscribe.Name = "Unsubscribe"
+        Me.Unsubscribe.Size = New System.Drawing.Size(100, 29)
+        Me.Unsubscribe.TabIndex = 10
+        Me.Unsubscribe.Text = "退订"
+        Me.Unsubscribe.UseVisualStyleBackColor = False
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(129, 216)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowTemplate.Height = 23
+        Me.DataGridView2.Size = New System.Drawing.Size(724, 36)
+        Me.DataGridView2.TabIndex = 0
         '
         'SearchFieldPanel
         '
@@ -513,65 +572,6 @@ Partial Class Student_UI
         Me.DateTimePicker1.Size = New System.Drawing.Size(156, 25)
         Me.DateTimePicker1.TabIndex = 1
         Me.DateTimePicker1.Value = New Date(2020, 11, 30, 0, 0, 0, 0)
-        '
-        'MyFieldPanel
-        '
-        Me.MyFieldPanel.Controls.Add(Me.ToShare)
-        Me.MyFieldPanel.Controls.Add(Me.Paying)
-        Me.MyFieldPanel.Controls.Add(Me.Unsubscribe)
-        Me.MyFieldPanel.Controls.Add(Me.DataGridView2)
-        Me.MyFieldPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MyFieldPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MyFieldPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.MyFieldPanel.Name = "MyFieldPanel"
-        Me.MyFieldPanel.Size = New System.Drawing.Size(978, 556)
-        Me.MyFieldPanel.TabIndex = 7
-        '
-        'ToShare
-        '
-        Me.ToShare.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ToShare.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ToShare.Location = New System.Drawing.Point(677, 109)
-        Me.ToShare.Margin = New System.Windows.Forms.Padding(4)
-        Me.ToShare.Name = "ToShare"
-        Me.ToShare.Size = New System.Drawing.Size(100, 29)
-        Me.ToShare.TabIndex = 12
-        Me.ToShare.Text = "发起拼场"
-        Me.ToShare.UseVisualStyleBackColor = False
-        '
-        'Paying
-        '
-        Me.Paying.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Paying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Paying.Location = New System.Drawing.Point(533, 109)
-        Me.Paying.Margin = New System.Windows.Forms.Padding(4)
-        Me.Paying.Name = "Paying"
-        Me.Paying.Size = New System.Drawing.Size(100, 29)
-        Me.Paying.TabIndex = 11
-        Me.Paying.Text = "缴费"
-        Me.Paying.UseVisualStyleBackColor = False
-        '
-        'Unsubscribe
-        '
-        Me.Unsubscribe.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Unsubscribe.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Unsubscribe.Location = New System.Drawing.Point(375, 109)
-        Me.Unsubscribe.Margin = New System.Windows.Forms.Padding(4)
-        Me.Unsubscribe.Name = "Unsubscribe"
-        Me.Unsubscribe.Size = New System.Drawing.Size(100, 29)
-        Me.Unsubscribe.TabIndex = 10
-        Me.Unsubscribe.Text = "退订"
-        Me.Unsubscribe.UseVisualStyleBackColor = False
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(129, 216)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowTemplate.Height = 23
-        Me.DataGridView2.Size = New System.Drawing.Size(724, 36)
-        Me.DataGridView2.TabIndex = 0
         '
         'MessagePanel
         '
@@ -1068,11 +1068,11 @@ Partial Class Student_UI
         Me.FieldContainer.Panel2.ResumeLayout(False)
         CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FieldContainer.ResumeLayout(False)
+        Me.MyFieldPanel.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SearchFieldPanel.ResumeLayout(False)
         Me.SearchFieldPanel.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MyFieldPanel.ResumeLayout(False)
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagePanel.ResumeLayout(False)
         Me.MessageContainer.Panel1.ResumeLayout(False)
         Me.MessageContainer.Panel2.ResumeLayout(False)

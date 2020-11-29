@@ -54,7 +54,7 @@ Public Class sqlDBM
         Else
             b = False
         End If
-        theR.Dispose()
+        'theR.Dispose()
         Return b
     End Function
     Public Sub select_table(ByRef ds As DataSet, ByVal table_name As String)
@@ -91,6 +91,7 @@ Public Class sqlDBM
 
     End Sub
     Public Sub time_stadium_info(ByRef DataGrid1 As DataGridView, ByVal searchTime As String, ByVal searchStadium As Int16)
+        'MsgBox(searchTime)
         Dim strSQL As String = "time_stadium_get"
         Dim cmd As New SqlCommand(strSQL, myConn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -109,8 +110,7 @@ Public Class sqlDBM
         Dim p As Boolean
         Dim theR As SqlDataReader
         Try
-            myCom = New SqlCommand("select * from court_manage where courtID=" & courtID & " and stoptime<" & expectedTime & "", myConn)
-            theR = myCom.ExecuteReader()
+            myCom = New SqlCommand("select * from court_manage where courtID='" & courtID & "' and stoptime < CONVERT(datetime," & expectedTime & " ,120) ", myConn)
             If theR.HasRows Then
                 p = False
             End If
@@ -118,7 +118,7 @@ Public Class sqlDBM
             p = True
         End Try
 
-        theR.Dispose()
+        'theR.Dispose()
         Return p
     End Function
     Public Function appointment_check(ByVal courtID As String, ByVal expectedTime As String) As Boolean
@@ -134,7 +134,7 @@ where courtID=" & courtID & " and expectedTime=" & expectedTime & "", myConn)
         Catch
             p = True
         End Try
-        theR.Dispose()
+        'theR.Dispose()
         Return p
     End Function
     Public Sub appointment(ByVal courtID As String, ByVal expectedTime As String)
@@ -197,7 +197,7 @@ appointment_records.expectedTime=" & expectedTime & " and t1.n_share>0 ", myConn
         Catch
             p = False
         End Try
-        theR.Dispose()
+        'theR.Dispose()
         Return p
     End Function
     Public Sub sharing_application(ByVal courtID As String, ByVal expectedTime As String, ByVal shareID As Int16)
@@ -225,7 +225,7 @@ appointment_records.expectedTime=" & expectedTime & " and t1.n_share>0 ", myConn
         Else
             k = 0
         End If
-        theR.Dispose()
+        'theR.Dispose()
         Return k
     End Function
     Public Sub queue_application(ByVal courtID As String, ByVal expectedTime As String)

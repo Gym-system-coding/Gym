@@ -169,7 +169,7 @@ Public Class Student_UI
         End If
         Dim expectedTime As String = String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00"
 
-        If gymDB.court_check(courtID, expectedTime) Then
+        If gymDB.court_check(courtID, expectedTime) = False Then
             MsgBox("此场地暂不开放")
             Return
         End If
@@ -378,7 +378,7 @@ Public Class Student_UI
     End Sub
 
     Private Sub searching_Click(sender As Object, e As EventArgs) Handles searching.Click
-        gymDB.time_stadium_info(DataGridView1, String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00", 103)
+        'gymDB.time_stadium_info(DataGridView1, String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00", 103)
     End Sub
 End Class
 'Now().ToString("yyyy-MM-dd HH:mm:ss") 

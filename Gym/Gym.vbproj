@@ -110,9 +110,6 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\teacher-UI.resx">
-      <DependentUpon>teacher-UI.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB\sqlDBM.vb" />
@@ -174,12 +171,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="UI\teacher-UI.Designer.vb">
-      <DependentUpon>teacher-UI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\teacher-UI.vb">
-      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
