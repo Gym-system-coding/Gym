@@ -84,6 +84,9 @@
     <None Include="My Project\app.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="UI\Manager-UI.resx">
+      <DependentUpon>Manager-UI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\student-UI.resx">
       <DependentUpon>student-UI.vb</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +106,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\sqlDBM.vb" />
+    <Compile Include="DB\var.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
