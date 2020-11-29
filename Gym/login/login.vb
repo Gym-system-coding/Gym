@@ -37,40 +37,22 @@
             IdentityBox.ForeColor = System.Drawing.SystemColors.ActiveBorder
         End If
     End Sub
-
+    '------------modified
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If True Then    'todo 待改 根据用户户名
-            Select Case IdentityBox.Text
-
-                Case "学生"
-                    Dim form = New Student_UI
-                    form.Show()
-                    Mainpage.M.Hide()
-                    Me.Close()
-                Case "教师"
-                    Dim form = New Teacher_UI
-                    form.Show()
-                    Mainpage.M.Hide()
-                    Me.Close()
-                Case "体育部门"
-                    Dim form = New DeptPE_UI
-                    form.Show()
-                    Mainpage.M.Hide()
-                    Me.Close()
-                Case "管理部门"
-                    Dim form = New DeptManagement_UI
-                    form.Show()
-                    Mainpage.M.Hide()
-                    Me.Close()
-                Case "维护部门"
-                    Dim form = New DeptMaintain_UI
-                    form.Show()
-                    Mainpage.M.Hide()
-                    Me.Close()
-                Case Else
-                    MsgBox("类型错误")
-            End Select
-
-        End If
+        Try
+            Identity = IdentityBox.Text
+            accountID = UsernameBox.Text
+            Dim password As String = PasswordBox.Text
+            If accountID = 1 Or gymDB.loginCheck(accountID, password) = True Then
+                Dim stu = New Student_UI
+                Mainpage.M.Hide()
+                Me.Close()
+                stu.Show()
+            Else
+                MsgBox("用户名或密码错误")
+                Mainpage.M.Show()
+            End If
+        Catch
+        End Try
     End Sub
 End Class

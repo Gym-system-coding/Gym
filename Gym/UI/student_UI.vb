@@ -1,4 +1,6 @@
-﻿Public Class Student_UI
+﻿Imports System.Windows.Forms
+
+Public Class Student_UI
     Sub HideAll()
         FieldPanel.Hide()
         ChangeColor(FieldInfo, BackColor, "White")
@@ -82,8 +84,9 @@
     End Sub
     '显示姓名
     Private Sub Student_UI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Me.WindowState = FormWindowState.Maximized
         'TODO 显示姓名
-        'UserName.Text=
+        'UserName.Text =
         Me.FieldInfo_Click(Me.FieldInfo, e)
         Me.SearchField_Click(Me.SearchField, e)
 
@@ -159,51 +162,126 @@
     End Sub
     '功能按钮11
     Private Sub Booking_Click(sender As Object, e As EventArgs) Handles Booking.Click
+        Dim courtID As String = FieldInput.Text
+        If courtID = Nothing Or ComboBox1.Text = Nothing Then
+            MsgBox("请先输入场地与时间")
+            Return
+        End If
+        Dim expectedTime As String = String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00"
+
+        If gymDB.court_check(courtID, expectedTime) Then
+            MsgBox("此场地暂不开放")
+            Return
+        End If
+
+        Dim f1 As Boolean = gymDB.appointment_check(courtID, expectedTime)
+        Dim f2 As Boolean
+        If f1 = False Then
+            Dim temp As New Int16
+            f2 = gymDB.sharing_application_check(courtID, expectedTime, temp)
+        End If
         'TODO 检索条件
-        If FieldInput.Text = "1" Then
+        If f1 = False And f2 = True Then
             Dim Pdd = MsgBox("场地已占用。
 该场地开放拼场，是否选择拼场？", Buttons:=1)
             If Pdd = 1 Then
                 Me.Sharing_Click(Me.Sharing, e)
             End If
-        ElseIf FieldInput.Text = "2" Then
-            MsgBox("场地已占用")
-        ElseIf FieldInput.Text = "3" Then
-            MsgBox("信息错误")
-        ElseIf FieldInput.Text = "4" Then
-            MsgBox("成功预约！")
+            'ElseIf FieldInput.Text = "2" Then
+            '    MsgBox("场地已占用")
+            'ElseIf FieldInput.Text = "3" Then
+            '    MsgBox("信息错误")
+            'ElseIf FieldInput.Text = "4" Then
+            '    MsgBox("成功预约！")
+        Else
+            gymDB.appointment(courtID, expectedTime)
+            ''设置允许拼场---------------------------------msgbox实现
         End If
     End Sub
     Private Sub Sharing_Click(sender As Object, e As EventArgs) Handles Sharing.Click
-        If FieldInput.Text = "1" Then
-            MsgBox("成功拼场！")
-        ElseIf FieldInput.Text = "2" Then
-            MsgBox("场地已占用")
-        ElseIf FieldInput.Text = "3" Then
-            MsgBox("信息错误")
-        ElseIf FieldInput.Text = "4" Then
-            Dim b = MsgBox("空场地！是否选择预约？")
-            If b = 1 Then
-                Me.Booking_Click(Me.Booking, e)
-            End If
+        Dim f2 As Boolean
+        Dim courtID As String = FieldInput.Text
+        If courtID = Nothing Or ComboBox1.Text = Nothing Then
+            MsgBox("请先输入场地与时间")
+            Return
+        End If
+        Dim expectedTime As String = String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00"
+
+        If gymDB.court_check(courtID, expectedTime) Then
+            MsgBox("此场地暂不开放")
+            Return
+        End If
+
+        Dim shareID As New Int16
+        f2 = gymDB.sharing_application_check(courtID, expectedTime, shareID)
+        If f2 Then
+            gymDB.sharing_application(courtID, expectedTime, shareID)
+        Else
+            MsgBox("无可拼场的朋友,您可以等待或换个场地")
+            End
+            'If FieldInput.Text = "1" Then
+            '    MsgBox("成功拼场！")
+            'ElseIf FieldInput.Text = "2" Then
+            '    MsgBox("场地已占用")
+            'ElseIf FieldInput.Text = "3" Then
+            '    MsgBox("信息错误")
+            'ElseIf FieldInput.Text = "4" Then
+            '    Dim b = MsgBox("空场地！是否选择预约？")
+            '    If b = 1 Then
+            '        Me.Booking_Click(Me.Booking, e)
+            '    End If
         End If
     End Sub
     Private Sub Waiting_Click(sender As Object, e As EventArgs) Handles Waiting.Click
-        If FieldInput.Text = "1" Then
-            Dim Pdd = MsgBox("该场地开放拼场，是否选择拼场？", Buttons:=1)
-            If Pdd = 1 Then
-                Me.Sharing_Click(Me.Sharing, e)
-            End If
-        ElseIf FieldInput.Text = "2" Then
-            MsgBox("等待成功！")
-        ElseIf FieldInput.Text = "3" Then
-            MsgBox("信息错误")
-        ElseIf FieldInput.Text = "4" Then
-            Dim b = MsgBox("空场地！是否选择预约？")
-            If b = 1 Then
-                Me.Booking_Click(Me.Booking, e)
-            End If
+        Dim courtID As String = FieldInput.Text
+        If courtID = Nothing Or ComboBox1.Text = Nothing Then
+            MsgBox("请先输入场地与时间")
+            Return
         End If
+        Dim expectedTime As String = String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00"
+
+        If gymDB.court_check(courtID, expectedTime) Then
+            MsgBox("此场地暂不开放")
+            Return
+        End If
+
+        '-----------------------------------------------------------------------------------------------
+        Dim f3 As Boolean = gymDB.appointment_check(courtID, expectedTime)
+
+        'TODO 检索条件
+        If f3 = True Then
+            Dim Pdd = MsgBox("当前场地空闲,是否直接预约?", Buttons:=1)
+            If Pdd = 1 Then
+                Me.Booking_Click(Me.Waiting, e)
+            End If
+
+            'ElseIf FieldInput.Text = "2" Then
+            '    MsgBox("场地已占用")
+            'ElseIf FieldInput.Text = "3" Then
+            '    MsgBox("信息错误")
+            'ElseIf FieldInput.Text = "4" Then
+            '    MsgBox("成功预约！")
+        Else
+            gymDB.appointment(courtID, expectedTime)
+            ''设置允许拼场---------------------------------msgbox实现
+
+        End If
+        '-----------------------------------------------------------------------------------------------
+        'If FieldInput.Text = "1" Then
+        '    Dim Pdd = MsgBox("该场地开放拼场，是否选择拼场？", Buttons:=1)
+        '    If Pdd = 1 Then
+        '        Me.Sharing_Click(Me.Sharing, e)
+        '    End If
+        'ElseIf FieldInput.Text = "2" Then
+        '    MsgBox("等待成功！")
+        'ElseIf FieldInput.Text = "3" Then
+        '    MsgBox("信息错误")
+        'ElseIf FieldInput.Text = "4" Then
+        '    Dim b = MsgBox("空场地！是否选择预约？")
+        '    If b = 1 Then
+        '        Me.Booking_Click(Me.Booking, e)
+        '    End If
+        'End If
     End Sub
     Private Sub DataGridView1_CellContentClick(sender As Object, e As Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         'TODO 链接数据库
@@ -290,4 +368,17 @@
         'TODO 反馈按钮
         MsgBox("问题反馈成功")
     End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub SearchFieldPanel_Paint(sender As Object, e As Windows.Forms.PaintEventArgs) Handles SearchFieldPanel.Paint
+        gymDB.time_stadium_info(DataGridView1, Now().ToString("yyyy-MM-dd HH:") & "00:00", 103)
+    End Sub
+
+    Private Sub searching_Click(sender As Object, e As EventArgs) Handles searching.Click
+        gymDB.time_stadium_info(DataGridView1, String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00", 103)
+    End Sub
 End Class
+'Now().ToString("yyyy-MM-dd HH:mm:ss") 

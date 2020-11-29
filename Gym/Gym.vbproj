@@ -84,20 +84,11 @@
     <None Include="My Project\app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UI\DeptManagement_UI.resx">
-      <DependentUpon>DeptManagement_UI.vb</DependentUpon>
+    <EmbeddedResource Include="UI\Manager-UI.resx">
+      <DependentUpon>Manager-UI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\DeptMaintain_UI.resx">
-      <DependentUpon>DeptMaintain_UI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\DeptPE_UI.resx">
-      <DependentUpon>DeptPE_UI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\teacher_UI.resx">
-      <DependentUpon>teacher_UI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\student_UI.resx">
-      <DependentUpon>student_UI.vb</DependentUpon>
+    <EmbeddedResource Include="UI\student-UI.resx">
+      <DependentUpon>student-UI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -110,8 +101,13 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\teacher-UI.resx">
+      <DependentUpon>teacher-UI.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\sqlDBM.vb" />
+    <Compile Include="DB\var.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,34 +119,16 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="UI\DeptManagement_UI.Designer.vb">
-      <DependentUpon>DeptManagement_UI.vb</DependentUpon>
+    <Compile Include="UI\Manager-UI.Designer.vb">
+      <DependentUpon>Manager-UI.vb</DependentUpon>
     </Compile>
-    <Compile Include="UI\DeptManagement_UI.vb">
+    <Compile Include="UI\Manager-UI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\DeptMaintain_UI.Designer.vb">
-      <DependentUpon>DeptMaintain_UI.vb</DependentUpon>
+    <Compile Include="UI\student-UI.Designer.vb">
+      <DependentUpon>student-UI.vb</DependentUpon>
     </Compile>
-    <Compile Include="UI\DeptMaintain_UI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\DeptPE_UI.Designer.vb">
-      <DependentUpon>DeptPE_UI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\DeptPE_UI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\teacher_UI.Designer.vb">
-      <DependentUpon>teacher_UI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\teacher_UI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\student_UI.Designer.vb">
-      <DependentUpon>student_UI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UI\student_UI.vb">
+    <Compile Include="UI\student-UI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login\Login.Designer.vb">
@@ -169,6 +147,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\teacher-UI.Designer.vb">
+      <DependentUpon>teacher-UI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\teacher-UI.vb">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
