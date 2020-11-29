@@ -85,8 +85,8 @@ Public Class Student_UI
     '显示姓名
     Private Sub Student_UI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Me.WindowState = FormWindowState.Maximized
-        'TODO 显示姓名
-        'UserName.Text =
+        'MsgBox("--" & accountID & "--")
+        UserName.Text = gymDB.searchname("users")
         Me.FieldInfo_Click(Me.FieldInfo, e)
         Me.SearchField_Click(Me.SearchField, e)
 
@@ -374,11 +374,11 @@ Public Class Student_UI
     End Sub
 
     Private Sub SearchFieldPanel_Paint(sender As Object, e As Windows.Forms.PaintEventArgs) Handles SearchFieldPanel.Paint
-        gymDB.time_stadium_info(DataGridView1, Now().ToString("yyyy-MM-dd HH:") & "00:00", 103)
+        'gymDB.time_stadium_info(DataGridView1, Now().ToString("yyyy-MM-dd HH:") & "00:00", 103)
     End Sub
 
     Private Sub searching_Click(sender As Object, e As EventArgs) Handles searching.Click
-        'gymDB.time_stadium_info(DataGridView1, String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00", 103)
+        gymDB.time_stadium_info(DataGridView1, String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00", 103)
     End Sub
 End Class
 'Now().ToString("yyyy-MM-dd HH:mm:ss") 

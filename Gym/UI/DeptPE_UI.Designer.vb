@@ -26,16 +26,15 @@ Partial Class DeptPE_UI
         Me.Root = New System.Windows.Forms.SplitContainer()
         Me.HomepageLink = New System.Windows.Forms.LinkLabel()
         Me.LogoutLink = New System.Windows.Forms.LinkLabel()
-        Me.UserName = New System.Windows.Forms.Label()
         Me.WelcomeText = New System.Windows.Forms.Label()
         Me.DeptPEUIText = New System.Windows.Forms.Label()
+        Me.Applying = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.PELabel2 = New System.Windows.Forms.Label()
+        Me.SelectRange = New System.Windows.Forms.ComboBox()
         Me.SelectSports = New System.Windows.Forms.ComboBox()
         Me.PELabel1 = New System.Windows.Forms.Label()
-        Me.SelectRange = New System.Windows.Forms.ComboBox()
-        Me.PELabel2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Applying = New System.Windows.Forms.Button()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Root.Panel1.SuspendLayout()
         Me.Root.Panel2.SuspendLayout()
@@ -56,7 +55,6 @@ Partial Class DeptPE_UI
         Me.Root.Panel1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Root.Panel1.Controls.Add(Me.HomepageLink)
         Me.Root.Panel1.Controls.Add(Me.LogoutLink)
-        Me.Root.Panel1.Controls.Add(Me.UserName)
         Me.Root.Panel1.Controls.Add(Me.WelcomeText)
         Me.Root.Panel1.Controls.Add(Me.DeptPEUIText)
         Me.Root.Panel1MinSize = 50
@@ -102,17 +100,6 @@ Partial Class DeptPE_UI
         Me.LogoutLink.TabStop = True
         Me.LogoutLink.Text = "退出"
         '
-        'UserName
-        '
-        Me.UserName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.UserName.AutoSize = True
-        Me.UserName.ForeColor = System.Drawing.Color.White
-        Me.UserName.Location = New System.Drawing.Point(774, 27)
-        Me.UserName.Name = "UserName"
-        Me.UserName.Size = New System.Drawing.Size(41, 12)
-        Me.UserName.TabIndex = 5
-        Me.UserName.Text = "某某某"
-        '
         'WelcomeText
         '
         Me.WelcomeText.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -136,6 +123,53 @@ Partial Class DeptPE_UI
         Me.DeptPEUIText.Text = "体育部专区"
         Me.DeptPEUIText.UseCompatibleTextRendering = True
         '
+        'Applying
+        '
+        Me.Applying.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Applying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Applying.Location = New System.Drawing.Point(359, 180)
+        Me.Applying.Name = "Applying"
+        Me.Applying.Size = New System.Drawing.Size(95, 23)
+        Me.Applying.TabIndex = 13
+        Me.Applying.Text = "申请比赛"
+        Me.Applying.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(508, 70)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(89, 12)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "选择开始时间："
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CustomFormat = "yy-mm-dd"
+        Me.DateTimePicker1.Location = New System.Drawing.Point(603, 64)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(129, 21)
+        Me.DateTimePicker1.TabIndex = 7
+        '
+        'PELabel2
+        '
+        Me.PELabel2.AutoSize = True
+        Me.PELabel2.Location = New System.Drawing.Point(288, 70)
+        Me.PELabel2.Name = "PELabel2"
+        Me.PELabel2.Size = New System.Drawing.Size(65, 12)
+        Me.PELabel2.TabIndex = 6
+        Me.PELabel2.Text = "选择范围："
+        '
+        'SelectRange
+        '
+        Me.SelectRange.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SelectRange.FormattingEnabled = True
+        Me.SelectRange.Items.AddRange(New Object() {"校级", "国际经济贸易学院", "金融学院", "国际商学院", "法学院", "英语学院", "外语学院", "信息学院", "保险学院", "政府管理学院", "国际关系学院", "中国语言文学学院", "统计学院", "马克思主义学院"})
+        Me.SelectRange.Location = New System.Drawing.Point(359, 67)
+        Me.SelectRange.Name = "SelectRange"
+        Me.SelectRange.Size = New System.Drawing.Size(121, 20)
+        Me.SelectRange.TabIndex = 5
+        '
         'SelectSports
         '
         Me.SelectSports.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -154,53 +188,6 @@ Partial Class DeptPE_UI
         Me.PELabel1.Size = New System.Drawing.Size(89, 12)
         Me.PELabel1.TabIndex = 3
         Me.PELabel1.Text = "选择体育项目："
-        '
-        'SelectRange
-        '
-        Me.SelectRange.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.SelectRange.FormattingEnabled = True
-        Me.SelectRange.Items.AddRange(New Object() {"校级", "国际经济贸易学院", "金融学院", "国际商学院", "法学院", "英语学院", "外语学院", "信息学院", "保险学院", "政府管理学院", "国际关系学院", "中国语言文学学院", "统计学院", "马克思主义学院"})
-        Me.SelectRange.Location = New System.Drawing.Point(359, 67)
-        Me.SelectRange.Name = "SelectRange"
-        Me.SelectRange.Size = New System.Drawing.Size(121, 20)
-        Me.SelectRange.TabIndex = 5
-        '
-        'PELabel2
-        '
-        Me.PELabel2.AutoSize = True
-        Me.PELabel2.Location = New System.Drawing.Point(288, 70)
-        Me.PELabel2.Name = "PELabel2"
-        Me.PELabel2.Size = New System.Drawing.Size(65, 12)
-        Me.PELabel2.TabIndex = 6
-        Me.PELabel2.Text = "选择范围："
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CustomFormat = "yy-mm-dd"
-        Me.DateTimePicker1.Location = New System.Drawing.Point(603, 64)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(129, 21)
-        Me.DateTimePicker1.TabIndex = 7
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(508, 70)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 12)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "选择开始时间："
-        '
-        'Applying
-        '
-        Me.Applying.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Applying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Applying.Location = New System.Drawing.Point(359, 180)
-        Me.Applying.Name = "Applying"
-        Me.Applying.Size = New System.Drawing.Size(95, 23)
-        Me.Applying.TabIndex = 13
-        Me.Applying.Text = "申请比赛"
-        Me.Applying.UseVisualStyleBackColor = False
         '
         'DeptPE_UI
         '
@@ -226,7 +213,6 @@ Partial Class DeptPE_UI
 
     Friend WithEvents Root As Windows.Forms.SplitContainer
     Public WithEvents DeptPEUIText As Windows.Forms.Label
-    Friend WithEvents UserName As Windows.Forms.Label
     Friend WithEvents WelcomeText As Windows.Forms.Label
     Friend WithEvents LogoutLink As Windows.Forms.LinkLabel
     Friend WithEvents HomepageLink As Windows.Forms.LinkLabel

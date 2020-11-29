@@ -7,5 +7,5 @@ Module var
 
     Public accountID As Integer
     Public Identity As String = 1
-    Public userName As String
+    Public Name As String
 End Module
