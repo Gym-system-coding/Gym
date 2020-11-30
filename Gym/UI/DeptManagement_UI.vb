@@ -1,7 +1,7 @@
 ﻿Public Class DeptManagement_UI
     Public Sub HideAll()
         ConfirmMaintainPanel.Hide()
-        AlterStatusPanel.Hide()
+        SearchFieldPanel.Hide()
         ConfirmGamePanel.Hide()
     End Sub
 
@@ -23,7 +23,7 @@
 
     Private Sub AlterStatus_Click(sender As Object, e As EventArgs) Handles ToAlterStatus.Click
         HideAll()
-        AlterStatusPanel.Show()
+        SearchFieldPanel.Show()
 
     End Sub
 
