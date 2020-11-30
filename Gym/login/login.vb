@@ -39,20 +39,72 @@
     End Sub
     '------------modified
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Try
-            Identity = IdentityBox.Text
-            accountID = UsernameBox.Text
-            Dim password As String = PasswordBox.Text
-            If accountID = 1 Or gymDB.loginCheck(accountID, password) = True Then
-                Dim stu = New Student_UI
-                Mainpage.M.Hide()
-                Me.Close()
-                stu.Show()
-            Else
-                MsgBox("用户名或密码错误")
-                Mainpage.M.Show()
-            End If
-        Catch
-        End Try
+        Identity = IdentityBox.Text
+        accountID = UsernameBox.Text
+        Dim password As String = PasswordBox.Text
+        Select Case IdentityBox.Text
+            Case "学生"
+                Try
+                    If accountID = 1 Or gymDB.loginCheck(accountID, password) = True Then
+
+                        'Name = gymDB.searchname("user")
+                        Dim form = New Student_UI
+                        Mainpage.M.Hide()
+                        form.Show()
+                    Else
+                        MsgBox("用户名或密码错误")
+                    End If
+                Catch
+                End Try
+            Case "教师"
+                Try
+                    'Name = gymDB.searchname("teacher")
+                    If accountID = 1 Or gymDB.loginCheck(accountID, password) = True Then
+                        Dim form = New Teacher_UI
+                        Mainpage.M.Hide()
+                        form.Show()
+                    Else
+                        MsgBox("用户名或密码错误")
+                    End If
+                Catch
+                End Try
+            Case "体育部门"
+                Try
+                    If accountID = 1 Or gymDB.loginCheck(accountID, password) = True Then
+                        Dim form = New DeptPE_UI
+                        Mainpage.M.Hide()
+                        form.Show()
+                    Else
+                        MsgBox("用户名或密码错误")
+                    End If
+                Catch
+                End Try
+            Case "管理部门"
+                Try
+                    If accountID = 1 Or gymDB.loginCheck(accountID, password) = True Then
+                        Dim form = New DeptManagement_UI
+                        Mainpage.M.Hide()
+                        form.Show()
+                    Else
+                        MsgBox("用户名或密码错误")
+                    End If
+                Catch
+                End Try
+            Case "维护部门"
+                Try
+                    If accountID = 1 Or gymDB.loginCheck(accountID, password) = True Then
+                        Dim form = New DeptMaintain_UI
+                        Mainpage.M.Hide()
+                        form.Show()
+                    Else
+                        MsgBox("用户名或密码错误")
+                    End If
+                Catch
+                End Try
+            Case Else
+                MsgBox("请选择正确的身份")
+
+        End Select
+        Me.Close()
     End Sub
 End Class

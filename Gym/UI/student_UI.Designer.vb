@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Student_UI
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,27 +20,63 @@ Partial Class Student_UI
     '注意: 以下过程是 Windows 窗体设计器所必需的
     '可以使用 Windows 窗体设计器修改它。  
     '不要使用代码编辑器修改它。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim ListViewGroup1 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
         Dim ListViewGroup2 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
         Dim ListViewGroup3 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left)
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("ddd")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Student_UI))
         Me.Root = New System.Windows.Forms.SplitContainer()
         Me.HomepageLink = New System.Windows.Forms.LinkLabel()
-        Me.Feedback = New System.Windows.Forms.Label()
         Me.LogoutLink = New System.Windows.Forms.LinkLabel()
-        Me.Message = New System.Windows.Forms.Label()
         Me.UserName = New System.Windows.Forms.Label()
         Me.WelcomeText = New System.Windows.Forms.Label()
+        Me.Feedback = New System.Windows.Forms.Label()
+        Me.Message = New System.Windows.Forms.Label()
         Me.TrainingInfo = New System.Windows.Forms.Label()
         Me.GameInfo = New System.Windows.Forms.Label()
         Me.FieldInfo = New System.Windows.Forms.Label()
         Me.StudentUIText = New System.Windows.Forms.Label()
+        Me.MessagePanel = New System.Windows.Forms.Panel()
+        Me.MessageContainer = New System.Windows.Forms.SplitContainer()
+        Me.Report = New System.Windows.Forms.Button()
+        Me.GeneralMessage = New System.Windows.Forms.Button()
+        Me.MessageGeneralPanel = New System.Windows.Forms.Panel()
+        Me.ListView2 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.MessageReportPanel = New System.Windows.Forms.Panel()
+        Me.FeedbackPanel = New System.Windows.Forms.Panel()
+        Me.FeedbackContainer = New System.Windows.Forms.SplitContainer()
+        Me.Maintenace = New System.Windows.Forms.Button()
+        Me.Problem = New System.Windows.Forms.Button()
+        Me.MaintenancePanel = New System.Windows.Forms.Panel()
+        Me.MaintenanceSubmit = New System.Windows.Forms.Button()
+        Me.MaintenanceDescribe = New System.Windows.Forms.RichTextBox()
+        Me.SelectMaintenanceType = New System.Windows.Forms.ComboBox()
+        Me.MaintenanceInput = New System.Windows.Forms.TextBox()
+        Me.MaintenanceLabel1 = New System.Windows.Forms.Label()
+        Me.MaintenanceLabel2 = New System.Windows.Forms.Label()
+        Me.MaintenanceLabel3 = New System.Windows.Forms.Label()
+        Me.ProblemPanel = New System.Windows.Forms.Panel()
+        Me.ProblemSubmit = New System.Windows.Forms.Button()
+        Me.ProblemDescribe = New System.Windows.Forms.RichTextBox()
+        Me.SelectProblemType = New System.Windows.Forms.ComboBox()
+        Me.GymNOInput = New System.Windows.Forms.TextBox()
+        Me.ProblemLabel1 = New System.Windows.Forms.Label()
+        Me.ProblemLabel2 = New System.Windows.Forms.Label()
+        Me.ProblemLabel3 = New System.Windows.Forms.Label()
+        Me.TrainingPanel = New System.Windows.Forms.Panel()
+        Me.TrainingApplying = New System.Windows.Forms.Button()
+        Me.SelectLesson = New System.Windows.Forms.ComboBox()
+        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
+        Me.TrainingLabel1 = New System.Windows.Forms.Label()
+        Me.GamePanel = New System.Windows.Forms.Panel()
+        Me.JoinGame = New System.Windows.Forms.Button()
+        Me.GameLabel3 = New System.Windows.Forms.Label()
+        Me.GameLabel2 = New System.Windows.Forms.Label()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.FieldPanel = New System.Windows.Forms.Panel()
         Me.FieldContainer = New System.Windows.Forms.SplitContainer()
         Me.MyField = New System.Windows.Forms.Button()
@@ -63,63 +99,10 @@ Partial Class Student_UI
         Me.Paying = New System.Windows.Forms.Button()
         Me.Unsubscribe = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.MessagePanel = New System.Windows.Forms.Panel()
-        Me.MessageContainer = New System.Windows.Forms.SplitContainer()
-        Me.Report = New System.Windows.Forms.Button()
-        Me.GeneralMessage = New System.Windows.Forms.Button()
-        Me.MessageGeneralPanel = New System.Windows.Forms.Panel()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.MessageReportPanel = New System.Windows.Forms.Panel()
-        Me.FeedbackPanel = New System.Windows.Forms.Panel()
-        Me.FeedbackContainer = New System.Windows.Forms.SplitContainer()
-        Me.Maintenace = New System.Windows.Forms.Button()
-        Me.Problem = New System.Windows.Forms.Button()
-        Me.ProblemPanel = New System.Windows.Forms.Panel()
-        Me.ProblemSubmit = New System.Windows.Forms.Button()
-        Me.ProblemDescribe = New System.Windows.Forms.RichTextBox()
-        Me.SelectProblemType = New System.Windows.Forms.ComboBox()
-        Me.GymNOInput = New System.Windows.Forms.TextBox()
-        Me.ProblemLabel1 = New System.Windows.Forms.Label()
-        Me.ProblemLabel2 = New System.Windows.Forms.Label()
-        Me.ProblemLabel3 = New System.Windows.Forms.Label()
-        Me.MaintenancePanel = New System.Windows.Forms.Panel()
-        Me.MaintenanceSubmit = New System.Windows.Forms.Button()
-        Me.MaintenanceDescribe = New System.Windows.Forms.RichTextBox()
-        Me.SelectMaintenanceType = New System.Windows.Forms.ComboBox()
-        Me.MaintenanceInput = New System.Windows.Forms.TextBox()
-        Me.MaintenanceLabel1 = New System.Windows.Forms.Label()
-        Me.MaintenanceLabel2 = New System.Windows.Forms.Label()
-        Me.MaintenanceLabel3 = New System.Windows.Forms.Label()
-        Me.TrainingPanel = New System.Windows.Forms.Panel()
-        Me.TrainingApplying = New System.Windows.Forms.Button()
-        Me.SelectLesson = New System.Windows.Forms.ComboBox()
-        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
-        Me.TrainingLabel1 = New System.Windows.Forms.Label()
-        Me.GamePanel = New System.Windows.Forms.Panel()
-        Me.JoinGame = New System.Windows.Forms.Button()
-        Me.GameLabel3 = New System.Windows.Forms.Label()
-        Me.GameLabel2 = New System.Windows.Forms.Label()
-        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Root.Panel1.SuspendLayout()
         Me.Root.Panel2.SuspendLayout()
         Me.Root.SuspendLayout()
-        Me.FieldPanel.SuspendLayout()
-        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FieldContainer.Panel1.SuspendLayout()
-        Me.FieldContainer.Panel2.SuspendLayout()
-        Me.FieldContainer.SuspendLayout()
-        Me.SearchFieldPanel.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MyFieldPanel.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagePanel.SuspendLayout()
         CType(Me.MessageContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessageContainer.Panel1.SuspendLayout()
@@ -131,13 +114,22 @@ Partial Class Student_UI
         Me.FeedbackContainer.Panel1.SuspendLayout()
         Me.FeedbackContainer.Panel2.SuspendLayout()
         Me.FeedbackContainer.SuspendLayout()
-        Me.ProblemPanel.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
+        Me.ProblemPanel.SuspendLayout()
         Me.TrainingPanel.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GamePanel.SuspendLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FieldPanel.SuspendLayout()
+        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FieldContainer.Panel1.SuspendLayout()
+        Me.FieldContainer.Panel2.SuspendLayout()
+        Me.FieldContainer.SuspendLayout()
+        Me.SearchFieldPanel.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MyFieldPanel.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Root
@@ -154,11 +146,11 @@ Partial Class Student_UI
         '
         Me.Root.Panel1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Root.Panel1.Controls.Add(Me.HomepageLink)
-        Me.Root.Panel1.Controls.Add(Me.Feedback)
         Me.Root.Panel1.Controls.Add(Me.LogoutLink)
-        Me.Root.Panel1.Controls.Add(Me.Message)
         Me.Root.Panel1.Controls.Add(Me.UserName)
         Me.Root.Panel1.Controls.Add(Me.WelcomeText)
+        Me.Root.Panel1.Controls.Add(Me.Feedback)
+        Me.Root.Panel1.Controls.Add(Me.Message)
         Me.Root.Panel1.Controls.Add(Me.TrainingInfo)
         Me.Root.Panel1.Controls.Add(Me.GameInfo)
         Me.Root.Panel1.Controls.Add(Me.FieldInfo)
@@ -184,13 +176,52 @@ Partial Class Student_UI
         Me.HomepageLink.AutoSize = True
         Me.HomepageLink.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.HomepageLink.LinkColor = System.Drawing.Color.DarkBlue
-        Me.HomepageLink.Location = New System.Drawing.Point(1097, 2)
+        Me.HomepageLink.Location = New System.Drawing.Point(998, 0)
         Me.HomepageLink.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.HomepageLink.Name = "HomepageLink"
         Me.HomepageLink.Size = New System.Drawing.Size(52, 27)
         Me.HomepageLink.TabIndex = 9
         Me.HomepageLink.TabStop = True
         Me.HomepageLink.Text = "主页"
+        '
+        'LogoutLink
+        '
+        Me.LogoutLink.ActiveLinkColor = System.Drawing.Color.White
+        Me.LogoutLink.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LogoutLink.AutoSize = True
+        Me.LogoutLink.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.LogoutLink.LinkColor = System.Drawing.Color.DarkBlue
+        Me.LogoutLink.Location = New System.Drawing.Point(998, 29)
+        Me.LogoutLink.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LogoutLink.Name = "LogoutLink"
+        Me.LogoutLink.Size = New System.Drawing.Size(52, 27)
+        Me.LogoutLink.TabIndex = 7
+        Me.LogoutLink.TabStop = True
+        Me.LogoutLink.Text = "退出"
+        '
+        'UserName
+        '
+        Me.UserName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.UserName.AutoSize = True
+        Me.UserName.ForeColor = System.Drawing.Color.White
+        Me.UserName.Location = New System.Drawing.Point(933, 32)
+        Me.UserName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.UserName.Name = "UserName"
+        Me.UserName.Size = New System.Drawing.Size(52, 15)
+        Me.UserName.TabIndex = 5
+        Me.UserName.Text = "某某某"
+        '
+        'WelcomeText
+        '
+        Me.WelcomeText.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WelcomeText.AutoSize = True
+        Me.WelcomeText.ForeColor = System.Drawing.Color.White
+        Me.WelcomeText.Location = New System.Drawing.Point(933, 9)
+        Me.WelcomeText.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.WelcomeText.Name = "WelcomeText"
+        Me.WelcomeText.Size = New System.Drawing.Size(37, 15)
+        Me.WelcomeText.TabIndex = 4
+        Me.WelcomeText.Text = "你好"
         '
         'Feedback
         '
@@ -205,21 +236,6 @@ Partial Class Student_UI
         Me.Feedback.Text = "反馈"
         Me.Feedback.UseCompatibleTextRendering = True
         '
-        'LogoutLink
-        '
-        Me.LogoutLink.ActiveLinkColor = System.Drawing.Color.White
-        Me.LogoutLink.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LogoutLink.AutoSize = True
-        Me.LogoutLink.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.LogoutLink.LinkColor = System.Drawing.Color.DarkBlue
-        Me.LogoutLink.Location = New System.Drawing.Point(1097, 31)
-        Me.LogoutLink.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LogoutLink.Name = "LogoutLink"
-        Me.LogoutLink.Size = New System.Drawing.Size(52, 27)
-        Me.LogoutLink.TabIndex = 7
-        Me.LogoutLink.TabStop = True
-        Me.LogoutLink.Text = "退出"
-        '
         'Message
         '
         Me.Message.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
@@ -232,30 +248,6 @@ Partial Class Student_UI
         Me.Message.TabIndex = 6
         Me.Message.Text = "通知"
         Me.Message.UseCompatibleTextRendering = True
-        '
-        'UserName
-        '
-        Me.UserName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.UserName.AutoSize = True
-        Me.UserName.ForeColor = System.Drawing.Color.White
-        Me.UserName.Location = New System.Drawing.Point(1032, 34)
-        Me.UserName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.UserName.Name = "UserName"
-        Me.UserName.Size = New System.Drawing.Size(52, 15)
-        Me.UserName.TabIndex = 5
-        Me.UserName.Text = "某某某"
-        '
-        'WelcomeText
-        '
-        Me.WelcomeText.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WelcomeText.AutoSize = True
-        Me.WelcomeText.ForeColor = System.Drawing.Color.White
-        Me.WelcomeText.Location = New System.Drawing.Point(1032, 11)
-        Me.WelcomeText.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.WelcomeText.Name = "WelcomeText"
-        Me.WelcomeText.Size = New System.Drawing.Size(37, 15)
-        Me.WelcomeText.TabIndex = 4
-        Me.WelcomeText.Text = "你好"
         '
         'TrainingInfo
         '
@@ -308,6 +300,464 @@ Partial Class Student_UI
         Me.StudentUIText.TabIndex = 0
         Me.StudentUIText.Text = "学生专区"
         Me.StudentUIText.UseCompatibleTextRendering = True
+        '
+        'MessagePanel
+        '
+        Me.MessagePanel.Controls.Add(Me.MessageContainer)
+        Me.MessagePanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MessagePanel.Location = New System.Drawing.Point(0, 0)
+        Me.MessagePanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.MessagePanel.Name = "MessagePanel"
+        Me.MessagePanel.Size = New System.Drawing.Size(1153, 568)
+        Me.MessagePanel.TabIndex = 4
+        Me.MessagePanel.Visible = False
+        '
+        'MessageContainer
+        '
+        Me.MessageContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
+        Me.MessageContainer.IsSplitterFixed = True
+        Me.MessageContainer.Location = New System.Drawing.Point(91, -1)
+        Me.MessageContainer.Margin = New System.Windows.Forms.Padding(4)
+        Me.MessageContainer.Name = "MessageContainer"
+        '
+        'MessageContainer.Panel1
+        '
+        Me.MessageContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.MessageContainer.Panel1.Controls.Add(Me.Report)
+        Me.MessageContainer.Panel1.Controls.Add(Me.GeneralMessage)
+        '
+        'MessageContainer.Panel2
+        '
+        Me.MessageContainer.Panel2.Controls.Add(Me.MessageGeneralPanel)
+        Me.MessageContainer.Panel2.Controls.Add(Me.MessageReportPanel)
+        Me.MessageContainer.Size = New System.Drawing.Size(1063, 556)
+        Me.MessageContainer.SplitterDistance = 108
+        Me.MessageContainer.SplitterWidth = 1
+        Me.MessageContainer.TabIndex = 4
+        '
+        'Report
+        '
+        Me.Report.BackColor = System.Drawing.Color.AliceBlue
+        Me.Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Report.Location = New System.Drawing.Point(0, 25)
+        Me.Report.Margin = New System.Windows.Forms.Padding(4)
+        Me.Report.Name = "Report"
+        Me.Report.Size = New System.Drawing.Size(144, 29)
+        Me.Report.TabIndex = 10
+        Me.Report.Text = "查看报表"
+        Me.Report.UseVisualStyleBackColor = False
+        '
+        'GeneralMessage
+        '
+        Me.GeneralMessage.BackColor = System.Drawing.Color.AliceBlue
+        Me.GeneralMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GeneralMessage.Location = New System.Drawing.Point(0, 0)
+        Me.GeneralMessage.Margin = New System.Windows.Forms.Padding(4)
+        Me.GeneralMessage.Name = "GeneralMessage"
+        Me.GeneralMessage.Size = New System.Drawing.Size(144, 29)
+        Me.GeneralMessage.TabIndex = 9
+        Me.GeneralMessage.Text = "查看消息"
+        Me.GeneralMessage.UseVisualStyleBackColor = False
+        '
+        'MessageGeneralPanel
+        '
+        Me.MessageGeneralPanel.Controls.Add(Me.ListView2)
+        Me.MessageGeneralPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MessageGeneralPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MessageGeneralPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.MessageGeneralPanel.Name = "MessageGeneralPanel"
+        Me.MessageGeneralPanel.Size = New System.Drawing.Size(954, 556)
+        Me.MessageGeneralPanel.TabIndex = 4
+        '
+        'ListView2
+        '
+        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2})
+        Me.ListView2.Dock = System.Windows.Forms.DockStyle.Fill
+        ListViewGroup1.Header = "ListViewGroup"
+        ListViewGroup1.Name = "ListViewGroup1"
+        ListViewGroup2.Header = "ListViewGroup"
+        ListViewGroup2.Name = "ListViewGroup2"
+        ListViewGroup3.Header = "ListViewGroup"
+        ListViewGroup3.Name = "ListViewGroup3"
+        Me.ListView2.Groups.AddRange(New System.Windows.Forms.ListViewGroup() {ListViewGroup1, ListViewGroup2, ListViewGroup3})
+        Me.ListView2.HideSelection = False
+        Me.ListView2.Location = New System.Drawing.Point(0, 0)
+        Me.ListView2.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListView2.Name = "ListView2"
+        Me.ListView2.Size = New System.Drawing.Size(954, 556)
+        Me.ListView2.TabIndex = 3
+        Me.ListView2.UseCompatibleStateImageBehavior = False
+        Me.ListView2.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "通知"
+        Me.ColumnHeader1.Width = 532
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "时间"
+        Me.ColumnHeader2.Width = 140
+        '
+        'MessageReportPanel
+        '
+        Me.MessageReportPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MessageReportPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MessageReportPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.MessageReportPanel.Name = "MessageReportPanel"
+        Me.MessageReportPanel.Size = New System.Drawing.Size(954, 556)
+        Me.MessageReportPanel.TabIndex = 5
+        '
+        'FeedbackPanel
+        '
+        Me.FeedbackPanel.Controls.Add(Me.FeedbackContainer)
+        Me.FeedbackPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FeedbackPanel.Location = New System.Drawing.Point(0, 0)
+        Me.FeedbackPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.FeedbackPanel.Name = "FeedbackPanel"
+        Me.FeedbackPanel.Size = New System.Drawing.Size(1153, 568)
+        Me.FeedbackPanel.TabIndex = 3
+        Me.FeedbackPanel.Visible = False
+        '
+        'FeedbackContainer
+        '
+        Me.FeedbackContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
+        Me.FeedbackContainer.IsSplitterFixed = True
+        Me.FeedbackContainer.Location = New System.Drawing.Point(73, -1)
+        Me.FeedbackContainer.Margin = New System.Windows.Forms.Padding(4)
+        Me.FeedbackContainer.Name = "FeedbackContainer"
+        '
+        'FeedbackContainer.Panel1
+        '
+        Me.FeedbackContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.FeedbackContainer.Panel1.Controls.Add(Me.Maintenace)
+        Me.FeedbackContainer.Panel1.Controls.Add(Me.Problem)
+        '
+        'FeedbackContainer.Panel2
+        '
+        Me.FeedbackContainer.Panel2.Controls.Add(Me.ProblemPanel)
+        Me.FeedbackContainer.Panel2.Controls.Add(Me.MaintenancePanel)
+        Me.FeedbackContainer.Size = New System.Drawing.Size(1080, 556)
+        Me.FeedbackContainer.SplitterDistance = 109
+        Me.FeedbackContainer.SplitterWidth = 1
+        Me.FeedbackContainer.TabIndex = 1
+        '
+        'Maintenace
+        '
+        Me.Maintenace.BackColor = System.Drawing.Color.AliceBlue
+        Me.Maintenace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Maintenace.Location = New System.Drawing.Point(0, 26)
+        Me.Maintenace.Margin = New System.Windows.Forms.Padding(4)
+        Me.Maintenace.Name = "Maintenace"
+        Me.Maintenace.Size = New System.Drawing.Size(144, 29)
+        Me.Maintenace.TabIndex = 10
+        Me.Maintenace.Text = "故障报修"
+        Me.Maintenace.UseVisualStyleBackColor = False
+        '
+        'Problem
+        '
+        Me.Problem.BackColor = System.Drawing.Color.AliceBlue
+        Me.Problem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Problem.Location = New System.Drawing.Point(0, 0)
+        Me.Problem.Margin = New System.Windows.Forms.Padding(4)
+        Me.Problem.Name = "Problem"
+        Me.Problem.Size = New System.Drawing.Size(144, 29)
+        Me.Problem.TabIndex = 9
+        Me.Problem.Text = "问题反馈"
+        Me.Problem.UseVisualStyleBackColor = False
+        '
+        'MaintenancePanel
+        '
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceSubmit)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceDescribe)
+        Me.MaintenancePanel.Controls.Add(Me.SelectMaintenanceType)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceInput)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel1)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel2)
+        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel3)
+        Me.MaintenancePanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MaintenancePanel.Location = New System.Drawing.Point(0, 0)
+        Me.MaintenancePanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaintenancePanel.Name = "MaintenancePanel"
+        Me.MaintenancePanel.Size = New System.Drawing.Size(970, 556)
+        Me.MaintenancePanel.TabIndex = 1
+        '
+        'MaintenanceSubmit
+        '
+        Me.MaintenanceSubmit.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.MaintenanceSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.MaintenanceSubmit.Location = New System.Drawing.Point(440, 412)
+        Me.MaintenanceSubmit.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaintenanceSubmit.Name = "MaintenanceSubmit"
+        Me.MaintenanceSubmit.Size = New System.Drawing.Size(100, 29)
+        Me.MaintenanceSubmit.TabIndex = 26
+        Me.MaintenanceSubmit.Text = "提交"
+        Me.MaintenanceSubmit.UseVisualStyleBackColor = False
+        '
+        'MaintenanceDescribe
+        '
+        Me.MaintenanceDescribe.Location = New System.Drawing.Point(255, 180)
+        Me.MaintenanceDescribe.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaintenanceDescribe.Name = "MaintenanceDescribe"
+        Me.MaintenanceDescribe.Size = New System.Drawing.Size(532, 189)
+        Me.MaintenanceDescribe.TabIndex = 25
+        Me.MaintenanceDescribe.Text = ""
+        '
+        'SelectMaintenanceType
+        '
+        Me.SelectMaintenanceType.FormattingEnabled = True
+        Me.SelectMaintenanceType.Location = New System.Drawing.Point(536, 71)
+        Me.SelectMaintenanceType.Margin = New System.Windows.Forms.Padding(4)
+        Me.SelectMaintenanceType.Name = "SelectMaintenanceType"
+        Me.SelectMaintenanceType.Size = New System.Drawing.Size(160, 23)
+        Me.SelectMaintenanceType.TabIndex = 24
+        '
+        'MaintenanceInput
+        '
+        Me.MaintenanceInput.Location = New System.Drawing.Point(255, 71)
+        Me.MaintenanceInput.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaintenanceInput.Name = "MaintenanceInput"
+        Me.MaintenanceInput.Size = New System.Drawing.Size(132, 25)
+        Me.MaintenanceInput.TabIndex = 23
+        '
+        'MaintenanceLabel1
+        '
+        Me.MaintenanceLabel1.AutoSize = True
+        Me.MaintenanceLabel1.Location = New System.Drawing.Point(173, 75)
+        Me.MaintenanceLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.MaintenanceLabel1.Name = "MaintenanceLabel1"
+        Me.MaintenanceLabel1.Size = New System.Drawing.Size(82, 15)
+        Me.MaintenanceLabel1.TabIndex = 27
+        Me.MaintenanceLabel1.Text = "场馆编号："
+        '
+        'MaintenanceLabel2
+        '
+        Me.MaintenanceLabel2.AutoSize = True
+        Me.MaintenanceLabel2.Location = New System.Drawing.Point(460, 75)
+        Me.MaintenanceLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.MaintenanceLabel2.Name = "MaintenanceLabel2"
+        Me.MaintenanceLabel2.Size = New System.Drawing.Size(82, 15)
+        Me.MaintenanceLabel2.TabIndex = 28
+        Me.MaintenanceLabel2.Text = "故障类型："
+        '
+        'MaintenanceLabel3
+        '
+        Me.MaintenanceLabel3.AutoSize = True
+        Me.MaintenanceLabel3.Location = New System.Drawing.Point(176, 184)
+        Me.MaintenanceLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.MaintenanceLabel3.Name = "MaintenanceLabel3"
+        Me.MaintenanceLabel3.Size = New System.Drawing.Size(82, 15)
+        Me.MaintenanceLabel3.TabIndex = 29
+        Me.MaintenanceLabel3.Text = "故障描述："
+        '
+        'ProblemPanel
+        '
+        Me.ProblemPanel.Controls.Add(Me.ProblemSubmit)
+        Me.ProblemPanel.Controls.Add(Me.ProblemDescribe)
+        Me.ProblemPanel.Controls.Add(Me.SelectProblemType)
+        Me.ProblemPanel.Controls.Add(Me.GymNOInput)
+        Me.ProblemPanel.Controls.Add(Me.ProblemLabel1)
+        Me.ProblemPanel.Controls.Add(Me.ProblemLabel2)
+        Me.ProblemPanel.Controls.Add(Me.ProblemLabel3)
+        Me.ProblemPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ProblemPanel.Location = New System.Drawing.Point(0, 0)
+        Me.ProblemPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.ProblemPanel.Name = "ProblemPanel"
+        Me.ProblemPanel.Size = New System.Drawing.Size(970, 556)
+        Me.ProblemPanel.TabIndex = 0
+        '
+        'ProblemSubmit
+        '
+        Me.ProblemSubmit.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.ProblemSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ProblemSubmit.Location = New System.Drawing.Point(440, 412)
+        Me.ProblemSubmit.Margin = New System.Windows.Forms.Padding(4)
+        Me.ProblemSubmit.Name = "ProblemSubmit"
+        Me.ProblemSubmit.Size = New System.Drawing.Size(100, 29)
+        Me.ProblemSubmit.TabIndex = 12
+        Me.ProblemSubmit.Text = "提交"
+        Me.ProblemSubmit.UseVisualStyleBackColor = False
+        '
+        'ProblemDescribe
+        '
+        Me.ProblemDescribe.Location = New System.Drawing.Point(255, 180)
+        Me.ProblemDescribe.Margin = New System.Windows.Forms.Padding(4)
+        Me.ProblemDescribe.Name = "ProblemDescribe"
+        Me.ProblemDescribe.Size = New System.Drawing.Size(532, 189)
+        Me.ProblemDescribe.TabIndex = 2
+        Me.ProblemDescribe.Text = ""
+        '
+        'SelectProblemType
+        '
+        Me.SelectProblemType.FormattingEnabled = True
+        Me.SelectProblemType.Items.AddRange(New Object() {"管理建议", "问题投诉"})
+        Me.SelectProblemType.Location = New System.Drawing.Point(536, 71)
+        Me.SelectProblemType.Margin = New System.Windows.Forms.Padding(4)
+        Me.SelectProblemType.Name = "SelectProblemType"
+        Me.SelectProblemType.Size = New System.Drawing.Size(160, 23)
+        Me.SelectProblemType.TabIndex = 1
+        '
+        'GymNOInput
+        '
+        Me.GymNOInput.Location = New System.Drawing.Point(255, 71)
+        Me.GymNOInput.Margin = New System.Windows.Forms.Padding(4)
+        Me.GymNOInput.Name = "GymNOInput"
+        Me.GymNOInput.Size = New System.Drawing.Size(132, 25)
+        Me.GymNOInput.TabIndex = 0
+        '
+        'ProblemLabel1
+        '
+        Me.ProblemLabel1.AutoSize = True
+        Me.ProblemLabel1.Location = New System.Drawing.Point(173, 75)
+        Me.ProblemLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.ProblemLabel1.Name = "ProblemLabel1"
+        Me.ProblemLabel1.Size = New System.Drawing.Size(82, 15)
+        Me.ProblemLabel1.TabIndex = 13
+        Me.ProblemLabel1.Text = "场馆编号："
+        '
+        'ProblemLabel2
+        '
+        Me.ProblemLabel2.AutoSize = True
+        Me.ProblemLabel2.Location = New System.Drawing.Point(460, 75)
+        Me.ProblemLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.ProblemLabel2.Name = "ProblemLabel2"
+        Me.ProblemLabel2.Size = New System.Drawing.Size(82, 15)
+        Me.ProblemLabel2.TabIndex = 14
+        Me.ProblemLabel2.Text = "问题类型："
+        '
+        'ProblemLabel3
+        '
+        Me.ProblemLabel3.AutoSize = True
+        Me.ProblemLabel3.Location = New System.Drawing.Point(176, 184)
+        Me.ProblemLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.ProblemLabel3.Name = "ProblemLabel3"
+        Me.ProblemLabel3.Size = New System.Drawing.Size(82, 15)
+        Me.ProblemLabel3.TabIndex = 15
+        Me.ProblemLabel3.Text = "问题描述："
+        '
+        'TrainingPanel
+        '
+        Me.TrainingPanel.Controls.Add(Me.TrainingApplying)
+        Me.TrainingPanel.Controls.Add(Me.SelectLesson)
+        Me.TrainingPanel.Controls.Add(Me.DataGridView5)
+        Me.TrainingPanel.Controls.Add(Me.TrainingLabel1)
+        Me.TrainingPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TrainingPanel.Location = New System.Drawing.Point(0, 0)
+        Me.TrainingPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.TrainingPanel.Name = "TrainingPanel"
+        Me.TrainingPanel.Size = New System.Drawing.Size(1153, 568)
+        Me.TrainingPanel.TabIndex = 2
+        Me.TrainingPanel.Visible = False
+        '
+        'TrainingApplying
+        '
+        Me.TrainingApplying.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TrainingApplying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.TrainingApplying.Location = New System.Drawing.Point(653, 56)
+        Me.TrainingApplying.Margin = New System.Windows.Forms.Padding(4)
+        Me.TrainingApplying.Name = "TrainingApplying"
+        Me.TrainingApplying.Size = New System.Drawing.Size(127, 29)
+        Me.TrainingApplying.TabIndex = 12
+        Me.TrainingApplying.Text = "申请教学"
+        Me.TrainingApplying.UseVisualStyleBackColor = False
+        '
+        'SelectLesson
+        '
+        Me.SelectLesson.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SelectLesson.FormattingEnabled = True
+        Me.SelectLesson.Items.AddRange(New Object() {"篮球", "排球", "羽毛球", "乒乓球", "棒垒球", "网球"})
+        Me.SelectLesson.Location = New System.Drawing.Point(459, 59)
+        Me.SelectLesson.Margin = New System.Windows.Forms.Padding(4)
+        Me.SelectLesson.Name = "SelectLesson"
+        Me.SelectLesson.Size = New System.Drawing.Size(160, 23)
+        Me.SelectLesson.TabIndex = 2
+        '
+        'DataGridView5
+        '
+        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView5.Location = New System.Drawing.Point(292, 184)
+        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView5.Name = "DataGridView5"
+        Me.DataGridView5.RowTemplate.Height = 23
+        Me.DataGridView5.Size = New System.Drawing.Size(552, 250)
+        Me.DataGridView5.TabIndex = 1
+        '
+        'TrainingLabel1
+        '
+        Me.TrainingLabel1.AutoSize = True
+        Me.TrainingLabel1.Location = New System.Drawing.Point(332, 62)
+        Me.TrainingLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.TrainingLabel1.Name = "TrainingLabel1"
+        Me.TrainingLabel1.Size = New System.Drawing.Size(112, 15)
+        Me.TrainingLabel1.TabIndex = 0
+        Me.TrainingLabel1.Text = "选择体育项目："
+        '
+        'GamePanel
+        '
+        Me.GamePanel.Controls.Add(Me.JoinGame)
+        Me.GamePanel.Controls.Add(Me.GameLabel3)
+        Me.GamePanel.Controls.Add(Me.GameLabel2)
+        Me.GamePanel.Controls.Add(Me.DataGridView4)
+        Me.GamePanel.Controls.Add(Me.DataGridView3)
+        Me.GamePanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GamePanel.Location = New System.Drawing.Point(0, 0)
+        Me.GamePanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.GamePanel.Name = "GamePanel"
+        Me.GamePanel.Size = New System.Drawing.Size(1153, 568)
+        Me.GamePanel.TabIndex = 1
+        Me.GamePanel.Visible = False
+        '
+        'JoinGame
+        '
+        Me.JoinGame.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.JoinGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.JoinGame.Location = New System.Drawing.Point(971, 148)
+        Me.JoinGame.Margin = New System.Windows.Forms.Padding(4)
+        Me.JoinGame.Name = "JoinGame"
+        Me.JoinGame.Size = New System.Drawing.Size(100, 29)
+        Me.JoinGame.TabIndex = 12
+        Me.JoinGame.Text = "报名比赛"
+        Me.JoinGame.UseVisualStyleBackColor = False
+        '
+        'GameLabel3
+        '
+        Me.GameLabel3.AutoSize = True
+        Me.GameLabel3.Location = New System.Drawing.Point(71, 328)
+        Me.GameLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.GameLabel3.Name = "GameLabel3"
+        Me.GameLabel3.Size = New System.Drawing.Size(67, 15)
+        Me.GameLabel3.TabIndex = 5
+        Me.GameLabel3.Text = "我的比赛"
+        '
+        'GameLabel2
+        '
+        Me.GameLabel2.AutoSize = True
+        Me.GameLabel2.Location = New System.Drawing.Point(48, 81)
+        Me.GameLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.GameLabel2.Name = "GameLabel2"
+        Me.GameLabel2.Size = New System.Drawing.Size(67, 15)
+        Me.GameLabel2.TabIndex = 4
+        Me.GameLabel2.Text = "比赛信息"
+        '
+        'DataGridView4
+        '
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Location = New System.Drawing.Point(209, 328)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.RowTemplate.Height = 23
+        Me.DataGridView4.Size = New System.Drawing.Size(820, 188)
+        Me.DataGridView4.TabIndex = 3
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(209, 81)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.RowTemplate.Height = 23
+        Me.DataGridView3.Size = New System.Drawing.Size(688, 188)
+        Me.DataGridView3.TabIndex = 1
         '
         'FieldPanel
         '
@@ -570,480 +1020,8 @@ Partial Class Student_UI
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowTemplate.Height = 23
-        Me.DataGridView2.Size = New System.Drawing.Size(724, 36)
+        Me.DataGridView2.Size = New System.Drawing.Size(724, 117)
         Me.DataGridView2.TabIndex = 0
-        '
-        'MessagePanel
-        '
-        Me.MessagePanel.Controls.Add(Me.MessageContainer)
-        Me.MessagePanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MessagePanel.Location = New System.Drawing.Point(0, 0)
-        Me.MessagePanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.MessagePanel.Name = "MessagePanel"
-        Me.MessagePanel.Size = New System.Drawing.Size(1153, 568)
-        Me.MessagePanel.TabIndex = 4
-        Me.MessagePanel.Visible = False
-        '
-        'MessageContainer
-        '
-        Me.MessageContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
-        Me.MessageContainer.IsSplitterFixed = True
-        Me.MessageContainer.Location = New System.Drawing.Point(91, -1)
-        Me.MessageContainer.Margin = New System.Windows.Forms.Padding(4)
-        Me.MessageContainer.Name = "MessageContainer"
-        '
-        'MessageContainer.Panel1
-        '
-        Me.MessageContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.MessageContainer.Panel1.Controls.Add(Me.Report)
-        Me.MessageContainer.Panel1.Controls.Add(Me.GeneralMessage)
-        '
-        'MessageContainer.Panel2
-        '
-        Me.MessageContainer.Panel2.Controls.Add(Me.MessageGeneralPanel)
-        Me.MessageContainer.Panel2.Controls.Add(Me.MessageReportPanel)
-        Me.MessageContainer.Size = New System.Drawing.Size(1063, 556)
-        Me.MessageContainer.SplitterDistance = 108
-        Me.MessageContainer.SplitterWidth = 1
-        Me.MessageContainer.TabIndex = 4
-        '
-        'Report
-        '
-        Me.Report.BackColor = System.Drawing.Color.AliceBlue
-        Me.Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Report.Location = New System.Drawing.Point(0, 25)
-        Me.Report.Margin = New System.Windows.Forms.Padding(4)
-        Me.Report.Name = "Report"
-        Me.Report.Size = New System.Drawing.Size(144, 29)
-        Me.Report.TabIndex = 10
-        Me.Report.Text = "查看报表"
-        Me.Report.UseVisualStyleBackColor = False
-        '
-        'GeneralMessage
-        '
-        Me.GeneralMessage.BackColor = System.Drawing.Color.AliceBlue
-        Me.GeneralMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GeneralMessage.Location = New System.Drawing.Point(0, 0)
-        Me.GeneralMessage.Margin = New System.Windows.Forms.Padding(4)
-        Me.GeneralMessage.Name = "GeneralMessage"
-        Me.GeneralMessage.Size = New System.Drawing.Size(144, 29)
-        Me.GeneralMessage.TabIndex = 9
-        Me.GeneralMessage.Text = "查看消息"
-        Me.GeneralMessage.UseVisualStyleBackColor = False
-        '
-        'MessageGeneralPanel
-        '
-        Me.MessageGeneralPanel.Controls.Add(Me.ListView1)
-        Me.MessageGeneralPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MessageGeneralPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MessageGeneralPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.MessageGeneralPanel.Name = "MessageGeneralPanel"
-        Me.MessageGeneralPanel.Size = New System.Drawing.Size(954, 556)
-        Me.MessageGeneralPanel.TabIndex = 4
-        '
-        'ListView1
-        '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
-        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
-        ListViewGroup1.Header = "ListViewGroup"
-        ListViewGroup1.Name = "ListViewGroup1"
-        ListViewGroup2.Header = "ListViewGroup"
-        ListViewGroup2.Name = "ListViewGroup2"
-        ListViewGroup3.Header = "ListViewGroup"
-        ListViewGroup3.Name = "ListViewGroup3"
-        Me.ListView1.Groups.AddRange(New System.Windows.Forms.ListViewGroup() {ListViewGroup1, ListViewGroup2, ListViewGroup3})
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
-        Me.ListView1.Location = New System.Drawing.Point(0, 0)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(4)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(954, 556)
-        Me.ListView1.TabIndex = 3
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "ddd"
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "ddd"
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "ddd"
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "ddd"
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "ddd"
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "ddd"
-        '
-        'MessageReportPanel
-        '
-        Me.MessageReportPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MessageReportPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MessageReportPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.MessageReportPanel.Name = "MessageReportPanel"
-        Me.MessageReportPanel.Size = New System.Drawing.Size(954, 556)
-        Me.MessageReportPanel.TabIndex = 5
-        '
-        'FeedbackPanel
-        '
-        Me.FeedbackPanel.Controls.Add(Me.FeedbackContainer)
-        Me.FeedbackPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FeedbackPanel.Location = New System.Drawing.Point(0, 0)
-        Me.FeedbackPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.FeedbackPanel.Name = "FeedbackPanel"
-        Me.FeedbackPanel.Size = New System.Drawing.Size(1153, 568)
-        Me.FeedbackPanel.TabIndex = 3
-        Me.FeedbackPanel.Visible = False
-        '
-        'FeedbackContainer
-        '
-        Me.FeedbackContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
-        Me.FeedbackContainer.IsSplitterFixed = True
-        Me.FeedbackContainer.Location = New System.Drawing.Point(73, -1)
-        Me.FeedbackContainer.Margin = New System.Windows.Forms.Padding(4)
-        Me.FeedbackContainer.Name = "FeedbackContainer"
-        '
-        'FeedbackContainer.Panel1
-        '
-        Me.FeedbackContainer.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.FeedbackContainer.Panel1.Controls.Add(Me.Maintenace)
-        Me.FeedbackContainer.Panel1.Controls.Add(Me.Problem)
-        '
-        'FeedbackContainer.Panel2
-        '
-        Me.FeedbackContainer.Panel2.Controls.Add(Me.ProblemPanel)
-        Me.FeedbackContainer.Panel2.Controls.Add(Me.MaintenancePanel)
-        Me.FeedbackContainer.Size = New System.Drawing.Size(1080, 556)
-        Me.FeedbackContainer.SplitterDistance = 109
-        Me.FeedbackContainer.SplitterWidth = 1
-        Me.FeedbackContainer.TabIndex = 1
-        '
-        'Maintenace
-        '
-        Me.Maintenace.BackColor = System.Drawing.Color.AliceBlue
-        Me.Maintenace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Maintenace.Location = New System.Drawing.Point(0, 26)
-        Me.Maintenace.Margin = New System.Windows.Forms.Padding(4)
-        Me.Maintenace.Name = "Maintenace"
-        Me.Maintenace.Size = New System.Drawing.Size(144, 29)
-        Me.Maintenace.TabIndex = 10
-        Me.Maintenace.Text = "故障报修"
-        Me.Maintenace.UseVisualStyleBackColor = False
-        '
-        'Problem
-        '
-        Me.Problem.BackColor = System.Drawing.Color.AliceBlue
-        Me.Problem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Problem.Location = New System.Drawing.Point(0, 0)
-        Me.Problem.Margin = New System.Windows.Forms.Padding(4)
-        Me.Problem.Name = "Problem"
-        Me.Problem.Size = New System.Drawing.Size(144, 29)
-        Me.Problem.TabIndex = 9
-        Me.Problem.Text = "问题反馈"
-        Me.Problem.UseVisualStyleBackColor = False
-        '
-        'ProblemPanel
-        '
-        Me.ProblemPanel.Controls.Add(Me.ProblemSubmit)
-        Me.ProblemPanel.Controls.Add(Me.ProblemDescribe)
-        Me.ProblemPanel.Controls.Add(Me.SelectProblemType)
-        Me.ProblemPanel.Controls.Add(Me.GymNOInput)
-        Me.ProblemPanel.Controls.Add(Me.ProblemLabel1)
-        Me.ProblemPanel.Controls.Add(Me.ProblemLabel2)
-        Me.ProblemPanel.Controls.Add(Me.ProblemLabel3)
-        Me.ProblemPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ProblemPanel.Location = New System.Drawing.Point(0, 0)
-        Me.ProblemPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.ProblemPanel.Name = "ProblemPanel"
-        Me.ProblemPanel.Size = New System.Drawing.Size(970, 556)
-        Me.ProblemPanel.TabIndex = 0
-        '
-        'ProblemSubmit
-        '
-        Me.ProblemSubmit.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ProblemSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ProblemSubmit.Location = New System.Drawing.Point(440, 412)
-        Me.ProblemSubmit.Margin = New System.Windows.Forms.Padding(4)
-        Me.ProblemSubmit.Name = "ProblemSubmit"
-        Me.ProblemSubmit.Size = New System.Drawing.Size(100, 29)
-        Me.ProblemSubmit.TabIndex = 12
-        Me.ProblemSubmit.Text = "提交"
-        Me.ProblemSubmit.UseVisualStyleBackColor = False
-        '
-        'ProblemDescribe
-        '
-        Me.ProblemDescribe.Location = New System.Drawing.Point(255, 180)
-        Me.ProblemDescribe.Margin = New System.Windows.Forms.Padding(4)
-        Me.ProblemDescribe.Name = "ProblemDescribe"
-        Me.ProblemDescribe.Size = New System.Drawing.Size(532, 189)
-        Me.ProblemDescribe.TabIndex = 2
-        Me.ProblemDescribe.Text = ""
-        '
-        'SelectProblemType
-        '
-        Me.SelectProblemType.FormattingEnabled = True
-        Me.SelectProblemType.Location = New System.Drawing.Point(536, 71)
-        Me.SelectProblemType.Margin = New System.Windows.Forms.Padding(4)
-        Me.SelectProblemType.Name = "SelectProblemType"
-        Me.SelectProblemType.Size = New System.Drawing.Size(160, 23)
-        Me.SelectProblemType.TabIndex = 1
-        '
-        'GymNOInput
-        '
-        Me.GymNOInput.Location = New System.Drawing.Point(255, 71)
-        Me.GymNOInput.Margin = New System.Windows.Forms.Padding(4)
-        Me.GymNOInput.Name = "GymNOInput"
-        Me.GymNOInput.Size = New System.Drawing.Size(132, 25)
-        Me.GymNOInput.TabIndex = 0
-        '
-        'ProblemLabel1
-        '
-        Me.ProblemLabel1.AutoSize = True
-        Me.ProblemLabel1.Location = New System.Drawing.Point(173, 75)
-        Me.ProblemLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.ProblemLabel1.Name = "ProblemLabel1"
-        Me.ProblemLabel1.Size = New System.Drawing.Size(82, 15)
-        Me.ProblemLabel1.TabIndex = 13
-        Me.ProblemLabel1.Text = "场馆编号："
-        '
-        'ProblemLabel2
-        '
-        Me.ProblemLabel2.AutoSize = True
-        Me.ProblemLabel2.Location = New System.Drawing.Point(460, 75)
-        Me.ProblemLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.ProblemLabel2.Name = "ProblemLabel2"
-        Me.ProblemLabel2.Size = New System.Drawing.Size(82, 15)
-        Me.ProblemLabel2.TabIndex = 14
-        Me.ProblemLabel2.Text = "问题类型："
-        '
-        'ProblemLabel3
-        '
-        Me.ProblemLabel3.AutoSize = True
-        Me.ProblemLabel3.Location = New System.Drawing.Point(176, 184)
-        Me.ProblemLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.ProblemLabel3.Name = "ProblemLabel3"
-        Me.ProblemLabel3.Size = New System.Drawing.Size(82, 15)
-        Me.ProblemLabel3.TabIndex = 15
-        Me.ProblemLabel3.Text = "问题描述："
-        '
-        'MaintenancePanel
-        '
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceSubmit)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceDescribe)
-        Me.MaintenancePanel.Controls.Add(Me.SelectMaintenanceType)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceInput)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel1)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel2)
-        Me.MaintenancePanel.Controls.Add(Me.MaintenanceLabel3)
-        Me.MaintenancePanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MaintenancePanel.Location = New System.Drawing.Point(0, 0)
-        Me.MaintenancePanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaintenancePanel.Name = "MaintenancePanel"
-        Me.MaintenancePanel.Size = New System.Drawing.Size(970, 556)
-        Me.MaintenancePanel.TabIndex = 1
-        '
-        'MaintenanceSubmit
-        '
-        Me.MaintenanceSubmit.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.MaintenanceSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.MaintenanceSubmit.Location = New System.Drawing.Point(440, 412)
-        Me.MaintenanceSubmit.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaintenanceSubmit.Name = "MaintenanceSubmit"
-        Me.MaintenanceSubmit.Size = New System.Drawing.Size(100, 29)
-        Me.MaintenanceSubmit.TabIndex = 26
-        Me.MaintenanceSubmit.Text = "提交"
-        Me.MaintenanceSubmit.UseVisualStyleBackColor = False
-        '
-        'MaintenanceDescribe
-        '
-        Me.MaintenanceDescribe.Location = New System.Drawing.Point(255, 180)
-        Me.MaintenanceDescribe.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaintenanceDescribe.Name = "MaintenanceDescribe"
-        Me.MaintenanceDescribe.Size = New System.Drawing.Size(532, 189)
-        Me.MaintenanceDescribe.TabIndex = 25
-        Me.MaintenanceDescribe.Text = ""
-        '
-        'SelectMaintenanceType
-        '
-        Me.SelectMaintenanceType.FormattingEnabled = True
-        Me.SelectMaintenanceType.Location = New System.Drawing.Point(536, 71)
-        Me.SelectMaintenanceType.Margin = New System.Windows.Forms.Padding(4)
-        Me.SelectMaintenanceType.Name = "SelectMaintenanceType"
-        Me.SelectMaintenanceType.Size = New System.Drawing.Size(160, 23)
-        Me.SelectMaintenanceType.TabIndex = 24
-        '
-        'MaintenanceInput
-        '
-        Me.MaintenanceInput.Location = New System.Drawing.Point(255, 71)
-        Me.MaintenanceInput.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaintenanceInput.Name = "MaintenanceInput"
-        Me.MaintenanceInput.Size = New System.Drawing.Size(132, 25)
-        Me.MaintenanceInput.TabIndex = 23
-        '
-        'MaintenanceLabel1
-        '
-        Me.MaintenanceLabel1.AutoSize = True
-        Me.MaintenanceLabel1.Location = New System.Drawing.Point(173, 75)
-        Me.MaintenanceLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.MaintenanceLabel1.Name = "MaintenanceLabel1"
-        Me.MaintenanceLabel1.Size = New System.Drawing.Size(82, 15)
-        Me.MaintenanceLabel1.TabIndex = 27
-        Me.MaintenanceLabel1.Text = "场馆编号："
-        '
-        'MaintenanceLabel2
-        '
-        Me.MaintenanceLabel2.AutoSize = True
-        Me.MaintenanceLabel2.Location = New System.Drawing.Point(460, 75)
-        Me.MaintenanceLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.MaintenanceLabel2.Name = "MaintenanceLabel2"
-        Me.MaintenanceLabel2.Size = New System.Drawing.Size(82, 15)
-        Me.MaintenanceLabel2.TabIndex = 28
-        Me.MaintenanceLabel2.Text = "故障类型："
-        '
-        'MaintenanceLabel3
-        '
-        Me.MaintenanceLabel3.AutoSize = True
-        Me.MaintenanceLabel3.Location = New System.Drawing.Point(176, 184)
-        Me.MaintenanceLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.MaintenanceLabel3.Name = "MaintenanceLabel3"
-        Me.MaintenanceLabel3.Size = New System.Drawing.Size(82, 15)
-        Me.MaintenanceLabel3.TabIndex = 29
-        Me.MaintenanceLabel3.Text = "故障描述："
-        '
-        'TrainingPanel
-        '
-        Me.TrainingPanel.Controls.Add(Me.TrainingApplying)
-        Me.TrainingPanel.Controls.Add(Me.SelectLesson)
-        Me.TrainingPanel.Controls.Add(Me.DataGridView5)
-        Me.TrainingPanel.Controls.Add(Me.TrainingLabel1)
-        Me.TrainingPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TrainingPanel.Location = New System.Drawing.Point(0, 0)
-        Me.TrainingPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.TrainingPanel.Name = "TrainingPanel"
-        Me.TrainingPanel.Size = New System.Drawing.Size(1153, 568)
-        Me.TrainingPanel.TabIndex = 2
-        Me.TrainingPanel.Visible = False
-        '
-        'TrainingApplying
-        '
-        Me.TrainingApplying.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TrainingApplying.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.TrainingApplying.Location = New System.Drawing.Point(653, 56)
-        Me.TrainingApplying.Margin = New System.Windows.Forms.Padding(4)
-        Me.TrainingApplying.Name = "TrainingApplying"
-        Me.TrainingApplying.Size = New System.Drawing.Size(127, 29)
-        Me.TrainingApplying.TabIndex = 12
-        Me.TrainingApplying.Text = "申请教学"
-        Me.TrainingApplying.UseVisualStyleBackColor = False
-        '
-        'SelectLesson
-        '
-        Me.SelectLesson.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.SelectLesson.FormattingEnabled = True
-        Me.SelectLesson.Items.AddRange(New Object() {"篮球", "排球", "羽毛球", "乒乓球", "棒垒球", "网球"})
-        Me.SelectLesson.Location = New System.Drawing.Point(459, 59)
-        Me.SelectLesson.Margin = New System.Windows.Forms.Padding(4)
-        Me.SelectLesson.Name = "SelectLesson"
-        Me.SelectLesson.Size = New System.Drawing.Size(160, 23)
-        Me.SelectLesson.TabIndex = 2
-        '
-        'DataGridView5
-        '
-        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView5.Location = New System.Drawing.Point(292, 184)
-        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView5.Name = "DataGridView5"
-        Me.DataGridView5.RowTemplate.Height = 23
-        Me.DataGridView5.Size = New System.Drawing.Size(552, 250)
-        Me.DataGridView5.TabIndex = 1
-        '
-        'TrainingLabel1
-        '
-        Me.TrainingLabel1.AutoSize = True
-        Me.TrainingLabel1.Location = New System.Drawing.Point(332, 62)
-        Me.TrainingLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.TrainingLabel1.Name = "TrainingLabel1"
-        Me.TrainingLabel1.Size = New System.Drawing.Size(112, 15)
-        Me.TrainingLabel1.TabIndex = 0
-        Me.TrainingLabel1.Text = "选择体育项目："
-        '
-        'GamePanel
-        '
-        Me.GamePanel.Controls.Add(Me.JoinGame)
-        Me.GamePanel.Controls.Add(Me.GameLabel3)
-        Me.GamePanel.Controls.Add(Me.GameLabel2)
-        Me.GamePanel.Controls.Add(Me.DataGridView4)
-        Me.GamePanel.Controls.Add(Me.DataGridView3)
-        Me.GamePanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GamePanel.Location = New System.Drawing.Point(0, 0)
-        Me.GamePanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.GamePanel.Name = "GamePanel"
-        Me.GamePanel.Size = New System.Drawing.Size(1153, 568)
-        Me.GamePanel.TabIndex = 1
-        Me.GamePanel.Visible = False
-        '
-        'JoinGame
-        '
-        Me.JoinGame.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.JoinGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.JoinGame.Location = New System.Drawing.Point(971, 148)
-        Me.JoinGame.Margin = New System.Windows.Forms.Padding(4)
-        Me.JoinGame.Name = "JoinGame"
-        Me.JoinGame.Size = New System.Drawing.Size(100, 29)
-        Me.JoinGame.TabIndex = 12
-        Me.JoinGame.Text = "报名比赛"
-        Me.JoinGame.UseVisualStyleBackColor = False
-        '
-        'GameLabel3
-        '
-        Me.GameLabel3.AutoSize = True
-        Me.GameLabel3.Location = New System.Drawing.Point(71, 328)
-        Me.GameLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.GameLabel3.Name = "GameLabel3"
-        Me.GameLabel3.Size = New System.Drawing.Size(67, 15)
-        Me.GameLabel3.TabIndex = 5
-        Me.GameLabel3.Text = "我的比赛"
-        '
-        'GameLabel2
-        '
-        Me.GameLabel2.AutoSize = True
-        Me.GameLabel2.Location = New System.Drawing.Point(48, 81)
-        Me.GameLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.GameLabel2.Name = "GameLabel2"
-        Me.GameLabel2.Size = New System.Drawing.Size(67, 15)
-        Me.GameLabel2.TabIndex = 4
-        Me.GameLabel2.Text = "比赛信息"
-        '
-        'DataGridView4
-        '
-        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView4.Location = New System.Drawing.Point(209, 328)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView4.Name = "DataGridView4"
-        Me.DataGridView4.RowTemplate.Height = 23
-        Me.DataGridView4.Size = New System.Drawing.Size(820, 188)
-        Me.DataGridView4.TabIndex = 3
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Location = New System.Drawing.Point(209, 81)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.RowTemplate.Height = 23
-        Me.DataGridView3.Size = New System.Drawing.Size(688, 188)
-        Me.DataGridView3.TabIndex = 1
         '
         'Student_UI
         '
@@ -1063,16 +1041,6 @@ Partial Class Student_UI
         Me.Root.Panel2.ResumeLayout(False)
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Root.ResumeLayout(False)
-        Me.FieldPanel.ResumeLayout(False)
-        Me.FieldContainer.Panel1.ResumeLayout(False)
-        Me.FieldContainer.Panel2.ResumeLayout(False)
-        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FieldContainer.ResumeLayout(False)
-        Me.SearchFieldPanel.ResumeLayout(False)
-        Me.SearchFieldPanel.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MyFieldPanel.ResumeLayout(False)
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagePanel.ResumeLayout(False)
         Me.MessageContainer.Panel1.ResumeLayout(False)
         Me.MessageContainer.Panel2.ResumeLayout(False)
@@ -1084,10 +1052,10 @@ Partial Class Student_UI
         Me.FeedbackContainer.Panel2.ResumeLayout(False)
         CType(Me.FeedbackContainer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FeedbackContainer.ResumeLayout(False)
-        Me.ProblemPanel.ResumeLayout(False)
-        Me.ProblemPanel.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
+        Me.ProblemPanel.ResumeLayout(False)
+        Me.ProblemPanel.PerformLayout()
         Me.TrainingPanel.ResumeLayout(False)
         Me.TrainingPanel.PerformLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1095,6 +1063,16 @@ Partial Class Student_UI
         Me.GamePanel.PerformLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FieldPanel.ResumeLayout(False)
+        Me.FieldContainer.Panel1.ResumeLayout(False)
+        Me.FieldContainer.Panel2.ResumeLayout(False)
+        CType(Me.FieldContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FieldContainer.ResumeLayout(False)
+        Me.SearchFieldPanel.ResumeLayout(False)
+        Me.SearchFieldPanel.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MyFieldPanel.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1141,13 +1119,9 @@ Partial Class Student_UI
     Friend WithEvents GameLabel3 As Windows.Forms.Label
     Friend WithEvents GameLabel2 As Windows.Forms.Label
     Friend WithEvents DataGridView4 As Windows.Forms.DataGridView
-    Friend WithEvents ListView1 As Windows.Forms.ListView
+    Friend WithEvents ListView2 As Windows.Forms.ListView
     Friend WithEvents ColumnHeader1 As Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader2 As Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader3 As Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader4 As Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader5 As Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader6 As Windows.Forms.ColumnHeader
     Friend WithEvents FeedbackContainer As Windows.Forms.SplitContainer
     Friend WithEvents Maintenace As Windows.Forms.Button
     Friend WithEvents Problem As Windows.Forms.Button

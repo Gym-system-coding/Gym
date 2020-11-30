@@ -3,4 +3,8 @@
         Me.Close()
         Mainpage.M.show()
     End Sub
+
+    Private Sub DeptMaintain_UI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        gymDB.Maintain_search(DataGridView1)
+    End Sub
 End Class
