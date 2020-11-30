@@ -17,7 +17,7 @@ Public Class Teacher_UI
       ,[courseID] 课程号
       ,[startTime] 开始时间
   FROM [gym_test].[dbo].[course_schedule]
-  WHERE gym_test.dbo.course_schedule.teacherID=" & accountID
+  WHERE gym_test.dbo.course_schedule.ID=" & accountID
         gymDB.datagrid_show(Me.DataGridView1, sqlstring)
 
     End Sub
