@@ -149,6 +149,17 @@ Public Class Student_UI
         MessageGeneralPanel.Show()
         MessageReportPanel.Hide()
 
+        ListView2.Clear()
+        'gymDB.get_notification(gymDS)
+        Dim LVI As ListViewItem
+        For i As Integer = 0 To gymDS.Tables("notification").Rows.Count - 1
+            LVI = New ListViewItem
+            LVI.Text = (gymDS.Tables("notification").Rows(i).Item(2))
+            LVI.SubItems.Add(gymDS.Tables("notification").Rows(i).Item(1))
+            ListView2.Items.Add(LVI)
+        Next
+        ListView2.Refresh()
+
     End Sub
     '跳转1-子页面：搜索场地信息页面
     Private Sub SearchField_Click(sender As Object, e As EventArgs) Handles SearchField.Click
@@ -168,35 +179,36 @@ Public Class Student_UI
             Return
         End If
         Dim expectedTime As String = String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00"
-
         If gymDB.court_check(courtID, expectedTime) = False Then
             MsgBox("此场地暂不开放")
             Return
         End If
+        'MsgBox(gymDB.appointment_check(courtID, expectedTime))
+        gymDB.appointment(courtID, expectedTime)
 
-        Dim f1 As Boolean = gymDB.appointment_check(courtID, expectedTime)
-        Dim f2 As Boolean
-        If f1 = False Then
-            Dim temp As New Int16
-            f2 = gymDB.sharing_application_check(courtID, expectedTime, temp)
-        End If
-        'TODO 检索条件
-        If f1 = False And f2 = True Then
-            Dim Pdd = MsgBox("场地已占用。
-该场地开放拼场，是否选择拼场？", Buttons:=1)
-            If Pdd = 1 Then
-                Me.Sharing_Click(Me.Sharing, e)
-            End If
-            'ElseIf FieldInput.Text = "2" Then
-            '    MsgBox("场地已占用")
-            'ElseIf FieldInput.Text = "3" Then
-            '    MsgBox("信息错误")
-            'ElseIf FieldInput.Text = "4" Then
-            '    MsgBox("成功预约！")
-        Else
-            gymDB.appointment(courtID, expectedTime)
-            ''设置允许拼场---------------------------------msgbox实现
-        End If
+        'Dim f1 As Boolean = gymDB.appointment_check(courtID, expectedTime)
+        'Dim f2 As Boolean
+        'If f1 = False Then
+        '    Dim temp As New Int16
+        '    f2 = gymDB.sharing_application_check(courtID, expectedTime, temp)
+        'End If
+        ''TODO 检索条件
+        'If f1 = False And f2 = True Then
+        '    Dim Pdd = MsgBox("场地已占用。
+        '该场地开放拼场，是否选择拼场？", Buttons:=1)
+        '    If Pdd = 1 Then
+        '        Me.Sharing_Click(Me.Sharing, e)
+        '    End If
+        'ElseIf FieldInput.Text = "2" Then
+        '    MsgBox("场地已占用")
+        'ElseIf FieldInput.Text = "3" Then
+        '    MsgBox("信息错误")
+        'ElseIf FieldInput.Text = "4" Then
+        '    MsgBox("成功预约！")
+        'ElseIf f1 = True Then
+        '    gymDB.appointment(courtID, expectedTime)
+        '    ''设置允许拼场---------------------------------msgbox实现
+        'End If
     End Sub
     Private Sub Sharing_Click(sender As Object, e As EventArgs) Handles Sharing.Click
         Dim f2 As Boolean
@@ -207,14 +219,14 @@ Public Class Student_UI
         End If
         Dim expectedTime As String = String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00"
 
-        If gymDB.court_check(courtID, expectedTime) Then
+        If gymDB.court_check(courtID, expectedTime) = False Then
             MsgBox("此场地暂不开放")
             Return
         End If
 
         Dim shareID As New Int16
         f2 = gymDB.sharing_application_check(courtID, expectedTime, shareID)
-        If f2 Then
+        If f2 = True Then
             gymDB.sharing_application(courtID, expectedTime, shareID)
         Else
             MsgBox("无可拼场的朋友,您可以等待或换个场地")
@@ -240,32 +252,32 @@ Public Class Student_UI
         End If
         Dim expectedTime As String = String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00"
 
-        If gymDB.court_check(courtID, expectedTime) Then
+        If gymDB.court_check(courtID, expectedTime) = False Then
             MsgBox("此场地暂不开放")
             Return
         End If
 
         '-----------------------------------------------------------------------------------------------
-        Dim f3 As Boolean = gymDB.appointment_check(courtID, expectedTime)
+        'Dim f3 As Boolean = gymDB.appointment_check(courtID, expectedTime)
 
-        'TODO 检索条件
-        If f3 = True Then
-            Dim Pdd = MsgBox("当前场地空闲,是否直接预约?", Buttons:=1)
-            If Pdd = 1 Then
-                Me.Booking_Click(Me.Waiting, e)
-            End If
+        ''TODO 检索条件
+        'If f3 = True Then
+        '    Dim Pdd = MsgBox("当前场地空闲,是否直接预约?", Buttons:=1)
+        '    If Pdd = 1 Then
+        '        Me.Booking_Click(Me.Waiting, e)
+        '    End If
 
-            'ElseIf FieldInput.Text = "2" Then
-            '    MsgBox("场地已占用")
-            'ElseIf FieldInput.Text = "3" Then
-            '    MsgBox("信息错误")
-            'ElseIf FieldInput.Text = "4" Then
-            '    MsgBox("成功预约！")
-        Else
-            gymDB.appointment(courtID, expectedTime)
-            ''设置允许拼场---------------------------------msgbox实现
+        '    'ElseIf FieldInput.Text = "2" Then
+        '    '    MsgBox("场地已占用")
+        '    'ElseIf FieldInput.Text = "3" Then
+        '    '    MsgBox("信息错误")
+        '    'ElseIf FieldInput.Text = "4" Then
+        '    '    MsgBox("成功预约！")
+        'Else
+        gymDB.queue_application(courtID, expectedTime)
+        ''设置允许拼场---------------------------------msgbox实现
 
-        End If
+        'End If
         '-----------------------------------------------------------------------------------------------
         'If FieldInput.Text = "1" Then
         '    Dim Pdd = MsgBox("该场地开放拼场，是否选择拼场？", Buttons:=1)
@@ -288,13 +300,13 @@ Public Class Student_UI
     End Sub
     '功能按钮12
     Private Sub Unsubscribe_Click(sender As Object, e As EventArgs) Handles Unsubscribe.Click
-        MsgBox("退订成功")
+        gymDB.cancel_appointment()
     End Sub
     Private Sub Paying_Click(sender As Object, e As EventArgs) Handles Paying.Click
         MsgBox("缴费成功")
     End Sub
     Private Sub ToShare_Click(sender As Object, e As EventArgs) Handles ToShare.Click
-        MsgBox("已发起拼场")
+        gymDB.share()
     End Sub
     Private Sub DataGridView2_CellContentClick(sender As Object, e As Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
         'TODO 链接数据库
@@ -311,8 +323,9 @@ Public Class Student_UI
         'TODO 链接数据库
     End Sub
     Private Sub JoinGame_Click(sender As Object, e As EventArgs) Handles JoinGame.Click
+        gymDB.match_application()
         'TODO 跳转选择页面
-        MsgBox("比赛报名成功")
+        'MsgBox("比赛报名成功")
     End Sub
 
     '-------------------------------------------------------------------------------------------------
@@ -323,8 +336,14 @@ Public Class Student_UI
         If (w = 1 Or w = 7) Then
             MsgBox("当前不开放申请")
         Else
+            Dim courseID As String = SelectLesson.Text
+            If courseID = Nothing Then
+                MsgBox("请先选择课程")
+                Return
+            End If
+            gymDB.course_application(courseID)
             'TODO 待完成
-            MsgBox("成功申请")
+            'MsgBox("成功申请")
         End If
     End Sub
     Private Sub DataGridView5_CellContentClick(sender As Object, e As Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView5.CellContentClick
@@ -345,9 +364,7 @@ Public Class Student_UI
         MessageReportPanel.Show()
         MessageGeneralPanel.Hide()
     End Sub
-    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
-        'TODO 链接数据库
-    End Sub
+
 
     '-------------------------------------------------------------------------------------------------
     '反馈部分
@@ -361,12 +378,30 @@ Public Class Student_UI
         MaintenancePanel.Show()
     End Sub
     Private Sub MaintenanceSubmit_Click(sender As Object, e As EventArgs) Handles MaintenanceSubmit.Click
-        'TODO 报修按钮
-        MsgBox("报修成功")
+        Dim stadiumID As String = MaintenanceInput.Text
+        Dim type As String = SelectMaintenanceType.Text
+        Dim details As String = MaintenanceDescribe.Text
+        If stadiumID = Nothing Or type = Nothing Or details = Nothing Then
+            MsgBox("请先输入信息")
+            Return
+        End If
+        gymDB.repair_feedback_set(stadiumID, type, details)
+
+        'TODO 反馈按钮
+        'MsgBox("问题反馈成功")
     End Sub
     Private Sub ProblemSubmit_Click(sender As Object, e As EventArgs) Handles ProblemSubmit.Click
+        Dim stadiumID As String = GymNOInput.Text
+        Dim type As String = SelectProblemType.Text
+        Dim details As String = ProblemDescribe.Text
+        If stadiumID = Nothing Or type = Nothing Or details = Nothing Then
+            MsgBox("请先输入信息")
+            Return
+        End If
+        gymDB.other_feedback_set(stadiumID, type, details)
+
         'TODO 反馈按钮
-        MsgBox("问题反馈成功")
+        'MsgBox("问题反馈成功")
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -374,11 +409,27 @@ Public Class Student_UI
     End Sub
 
     Private Sub SearchFieldPanel_Paint(sender As Object, e As Windows.Forms.PaintEventArgs) Handles SearchFieldPanel.Paint
-        'gymDB.time_stadium_info(DataGridView1, Now().ToString("yyyy-MM-dd HH:") & "00:00", 103)
+        gymDB.time_stadium_info(DataGridView1, Now().ToString("yyyy-MM-dd HH:") & "00:00", 103)
     End Sub
 
     Private Sub searching_Click(sender As Object, e As EventArgs) Handles searching.Click
         gymDB.time_stadium_info(DataGridView1, String.Format("{0:yyyy-MM-dd}", DateTimePicker1.Value) & " " & ComboBox1.Text.Substring(0, 2) & ":00:00", 103)
     End Sub
+
+    Private Sub MyFieldPanel_Paint(sender As Object, e As PaintEventArgs) Handles MyFieldPanel.Paint
+        gymDB.my_search(DataGridView2)
+    End Sub
+
+    Private Sub GamePanel_VisibleChanged(sender As Object, e As EventArgs) Handles GamePanel.VisibleChanged
+        If GamePanel.Visible = True Then
+            gymDB.match_search(DataGridView3)
+            gymDB.my_match_search(DataGridView4)
+        End If
+    End Sub
+
+    Private Sub TrainingPanel_VisibleChanged(sender As Object, e As EventArgs) Handles TrainingPanel.VisibleChanged
+        gymDB.course_search(DataGridView5)
+    End Sub
+
 End Class
 'Now().ToString("yyyy-MM-dd HH:mm:ss") 

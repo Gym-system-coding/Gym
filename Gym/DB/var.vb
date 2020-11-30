@@ -5,7 +5,7 @@ Module var
 
     Public gymDB As sqlDBM = New sqlDBM
 
-    Public accountID As Integer
+    Public accountID As String
     Public Identity As String = 1
     Public Name As String
 End Module

@@ -43,6 +43,7 @@ Partial Class Teacher_UI
         Me.Root.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
         Me.Root.IsSplitterFixed = True
         Me.Root.Location = New System.Drawing.Point(0, 0)
+        Me.Root.Margin = New System.Windows.Forms.Padding(4)
         Me.Root.Name = "Root"
         Me.Root.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -59,8 +60,9 @@ Partial Class Teacher_UI
         'Root.Panel2
         '
         Me.Root.Panel2.Controls.Add(Me.DataGridView1)
-        Me.Root.Size = New System.Drawing.Size(865, 500)
+        Me.Root.Size = New System.Drawing.Size(1153, 625)
         Me.Root.SplitterDistance = 52
+        Me.Root.SplitterWidth = 5
         Me.Root.TabIndex = 0
         '
         'RefreshLink
@@ -70,9 +72,10 @@ Partial Class Teacher_UI
         Me.RefreshLink.AutoSize = True
         Me.RefreshLink.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.RefreshLink.LinkColor = System.Drawing.Color.DarkBlue
-        Me.RefreshLink.Location = New System.Drawing.Point(823, 2)
+        Me.RefreshLink.Location = New System.Drawing.Point(1097, 2)
+        Me.RefreshLink.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.RefreshLink.Name = "RefreshLink"
-        Me.RefreshLink.Size = New System.Drawing.Size(42, 22)
+        Me.RefreshLink.Size = New System.Drawing.Size(52, 27)
         Me.RefreshLink.TabIndex = 9
         Me.RefreshLink.TabStop = True
         Me.RefreshLink.Text = "刷新"
@@ -84,9 +87,10 @@ Partial Class Teacher_UI
         Me.LogoutLink.AutoSize = True
         Me.LogoutLink.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.LogoutLink.LinkColor = System.Drawing.Color.DarkBlue
-        Me.LogoutLink.Location = New System.Drawing.Point(823, 25)
+        Me.LogoutLink.Location = New System.Drawing.Point(1097, 31)
+        Me.LogoutLink.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LogoutLink.Name = "LogoutLink"
-        Me.LogoutLink.Size = New System.Drawing.Size(42, 22)
+        Me.LogoutLink.Size = New System.Drawing.Size(52, 27)
         Me.LogoutLink.TabIndex = 7
         Me.LogoutLink.TabStop = True
         Me.LogoutLink.Text = "退出"
@@ -96,9 +100,10 @@ Partial Class Teacher_UI
         Me.UserName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.UserName.AutoSize = True
         Me.UserName.ForeColor = System.Drawing.Color.White
-        Me.UserName.Location = New System.Drawing.Point(774, 27)
+        Me.UserName.Location = New System.Drawing.Point(1032, 34)
+        Me.UserName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.UserName.Name = "UserName"
-        Me.UserName.Size = New System.Drawing.Size(41, 12)
+        Me.UserName.Size = New System.Drawing.Size(52, 15)
         Me.UserName.TabIndex = 5
         Me.UserName.Text = "某某某"
         '
@@ -107,9 +112,10 @@ Partial Class Teacher_UI
         Me.WelcomeText.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.WelcomeText.AutoSize = True
         Me.WelcomeText.ForeColor = System.Drawing.Color.White
-        Me.WelcomeText.Location = New System.Drawing.Point(774, 9)
+        Me.WelcomeText.Location = New System.Drawing.Point(1032, 11)
+        Me.WelcomeText.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.WelcomeText.Name = "WelcomeText"
-        Me.WelcomeText.Size = New System.Drawing.Size(29, 12)
+        Me.WelcomeText.Size = New System.Drawing.Size(37, 15)
         Me.WelcomeText.TabIndex = 4
         Me.WelcomeText.Text = "你好"
         '
@@ -118,9 +124,10 @@ Partial Class Teacher_UI
         Me.TeacherUIText.AutoSize = True
         Me.TeacherUIText.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.TeacherUIText.ForeColor = System.Drawing.Color.Navy
-        Me.TeacherUIText.Location = New System.Drawing.Point(3, 12)
+        Me.TeacherUIText.Location = New System.Drawing.Point(4, 15)
+        Me.TeacherUIText.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TeacherUIText.Name = "TeacherUIText"
-        Me.TeacherUIText.Size = New System.Drawing.Size(72, 27)
+        Me.TeacherUIText.Size = New System.Drawing.Size(90, 32)
         Me.TeacherUIText.TabIndex = 0
         Me.TeacherUIText.Text = "教师专区"
         Me.TeacherUIText.UseCompatibleTextRendering = True
@@ -129,22 +136,24 @@ Partial Class Teacher_UI
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(203, 84)
+        Me.DataGridView1.Location = New System.Drawing.Point(271, 105)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 50
         Me.DataGridView1.RowTemplate.Height = 23
-        Me.DataGridView1.Size = New System.Drawing.Size(514, 296)
+        Me.DataGridView1.Size = New System.Drawing.Size(685, 370)
         Me.DataGridView1.TabIndex = 0
         '
         'Teacher_UI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(865, 500)
+        Me.ClientSize = New System.Drawing.Size(1153, 625)
         Me.Controls.Add(Me.Root)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(750, 500)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MinimumSize = New System.Drawing.Size(994, 613)
         Me.Name = "Teacher_UI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "teacher_UI"

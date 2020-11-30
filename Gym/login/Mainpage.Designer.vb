@@ -60,7 +60,7 @@ Partial Class Mainpage
         Me.Root.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
         Me.Root.IsSplitterFixed = True
         Me.Root.Location = New System.Drawing.Point(0, 0)
-        Me.Root.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Root.Margin = New System.Windows.Forms.Padding(4)
         Me.Root.Name = "Root"
         Me.Root.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -84,7 +84,7 @@ Partial Class Mainpage
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 9)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(373, 76)
         Me.PictureBox1.TabIndex = 1
@@ -109,14 +109,14 @@ Partial Class Mainpage
         '
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer2.Name = "SplitContainer2"
         '
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.SplitContainer3)
         Me.SplitContainer2.Size = New System.Drawing.Size(1067, 486)
-        Me.SplitContainer2.SplitterDistance = 116
+        Me.SplitContainer2.SplitterDistance = 115
         Me.SplitContainer2.SplitterWidth = 5
         Me.SplitContainer2.TabIndex = 0
         '
@@ -124,13 +124,13 @@ Partial Class Mainpage
         '
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
         'SplitContainer3.Panel1
         '
         Me.SplitContainer3.Panel1.Controls.Add(Me.SplitContainer4)
-        Me.SplitContainer3.Size = New System.Drawing.Size(946, 486)
+        Me.SplitContainer3.Size = New System.Drawing.Size(947, 486)
         Me.SplitContainer3.SplitterDistance = 811
         Me.SplitContainer3.SplitterWidth = 5
         Me.SplitContainer3.TabIndex = 0
@@ -139,7 +139,7 @@ Partial Class Mainpage
         '
         Me.SplitContainer4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer4.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainer4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SplitContainer4.Margin = New System.Windows.Forms.Padding(4)
         Me.SplitContainer4.Name = "SplitContainer4"
         Me.SplitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -181,7 +181,7 @@ Partial Class Mainpage
         Me.ListView1.Groups.AddRange(New System.Windows.Forms.ListViewGroup() {ListViewGroup1, ListViewGroup2, ListViewGroup3})
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(0, 0)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(4)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(811, 439)
         Me.ListView1.TabIndex = 1
@@ -208,7 +208,7 @@ Partial Class Mainpage
         Me.NewsList.ItemHeight = 27
         Me.NewsList.Items.AddRange(New Object() {"news", "aaa", "bbb", "ccc"})
         Me.NewsList.Location = New System.Drawing.Point(0, 0)
-        Me.NewsList.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NewsList.Margin = New System.Windows.Forms.Padding(4)
         Me.NewsList.Name = "NewsList"
         Me.NewsList.Size = New System.Drawing.Size(811, 439)
         Me.NewsList.TabIndex = 0
@@ -220,7 +220,7 @@ Partial Class Mainpage
         Me.ClientSize = New System.Drawing.Size(1067, 562)
         Me.Controls.Add(Me.Root)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Mainpage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "主页"
